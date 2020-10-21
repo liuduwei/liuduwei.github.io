@@ -5,18 +5,19 @@
   
 
   
-  <title>Hello World | Blog</title>
+  <title>Grub rescue 修复引导 | Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+  <meta name="description" content="grub rescue 修复引导1.进入 normal 模式:  set  ls (hdx,y)&#x2F;boot&#x2F;grub&#x2F;  set root&#x3D;(hdx,y)  set prefix&#x3D;(hdx,y)&#x2F;boot&#x2F;grub&#x2F;  insmod normal  normal2.启动 arch 重装 grub:  grub-install –target&#x3D;x86_64-efi –efi-directory&#x3D;&#x2F;b">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="http://example.com/2020/10/12/hello-world/index.html">
+<meta property="og:title" content="Grub rescue 修复引导">
+<meta property="og:url" content="http://example.com/2020/10/21/grub/index.html">
 <meta property="og:site_name" content="Blog">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta property="og:description" content="grub rescue 修复引导1.进入 normal 模式:  set  ls (hdx,y)&#x2F;boot&#x2F;grub&#x2F;  set root&#x3D;(hdx,y)  set prefix&#x3D;(hdx,y)&#x2F;boot&#x2F;grub&#x2F;  insmod normal  normal2.启动 arch 重装 grub:  grub-install –target&#x3D;x86_64-efi –efi-directory&#x3D;&#x2F;b">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2020-10-12T10:00:57.945Z">
-<meta property="article:modified_time" content="2020-10-12T10:00:57.945Z">
+<meta property="article:published_time" content="2020-10-21T05:45:34.000Z">
+<meta property="article:modified_time" content="2020-10-21T07:47:17.284Z">
 <meta property="article:author" content="LDW">
+<meta property="article:tag" content="Archlinux grub">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternate" href="/atom.xml" title="Blog" type="application/atom+xml">
@@ -66,10 +67,10 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main"><article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-grub" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2020/10/12/hello-world/" class="article-date">
-  <time datetime="2020-10-12T10:00:57.945Z" itemprop="datePublished">2020-10-12</time>
+    <a href="/2020/10/21/grub/" class="article-date">
+  <time datetime="2020-10-21T05:45:34.000Z" itemprop="datePublished">2020-10-21</time>
 </a>
     
   </div>
@@ -80,7 +81,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      Hello World
+      Grub rescue 修复引导
     </h1>
   
 
@@ -88,41 +89,49 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+        <h1 id="grub-rescue-修复引导"><a href="#grub-rescue-修复引导" class="headerlink" title="grub rescue 修复引导"></a>grub rescue 修复引导</h1><p>1.<strong><em>进入 normal 模式:</em></strong></p>
+<ul>
+<li><p>set</p>
+</li>
+<li><p>ls (hdx,y)/boot/grub/</p>
+</li>
+<li><p>set root=(hdx,y)</p>
+</li>
+<li><p>set prefix=(hdx,y)/boot/grub/</p>
+</li>
+<li><p>insmod normal</p>
+</li>
+<li><p>normal<br>2.<strong><em>启动 arch 重装 grub:</em></strong></p>
+</li>
+<li><p>grub-install –target=x86_64-efi –efi-directory=/boot/EFI –bootloader-id=GRUB</p>
+</li>
+<li><p>grub-mkconfig -o /boot/grub/grub.cfg</p>
+</li>
+</ul>
+<p>3.<strong><em>重启结束</em></strong></p>
+<h1 id="更换主题"><a href="#更换主题" class="headerlink" title="更换主题"></a>更换主题</h1><p>直接下载主题，解压进入目录执行:</p>
+<pre><code>sudo ./install.sh</code></pre>
+<h1 id="win10-arch-双引导"><a href="#win10-arch-双引导" class="headerlink" title="win10+arch 双引导:"></a>win10+arch 双引导:</h1><p>挂在 win10 所在的 efi 目录,直接重新生 grubconfig 文件</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2020/10/12/hello-world/" data-id="ckgj3gcwt0001p4pihkgv2gb6" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2020/10/21/grub/" data-id="ckgj3gcwv0002p4pi257809nc" class="article-share-link">Share</a>
       
       
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Archlinux-grub/" rel="tag">Archlinux grub</a></li></ul>
+
     </footer>
   </div>
   
     
 <nav id="article-nav">
   
-    <a href="/2020/10/12/begin/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Newer</strong>
-      <div class="article-nav-title">
-        
-          开个博客,随便写写
-        
-      </div>
-    </a>
   
+    <a href="/2020/10/12/begin/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">开个博客,随便写写</div>
+    </a>
   
 </nav>
 

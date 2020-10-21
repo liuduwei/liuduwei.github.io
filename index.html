@@ -5,17 +5,17 @@
   
 
   
-  <title>Hexo</title>
+  <title>Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
+<meta property="og:title" content="Blog">
 <meta property="og:url" content="http://example.com/index.html">
-<meta property="og:site_name" content="Hexo">
+<meta property="og:site_name" content="Blog">
 <meta property="og:locale" content="en_US">
-<meta property="article:author" content="John Doe">
+<meta property="article:author" content="LDW">
 <meta name="twitter:card" content="summary">
   
-    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+    <link rel="alternate" href="/atom.xml" title="Blog" type="application/atom+xml">
   
   
     <link rel="icon" href="/favicon.png">
@@ -36,7 +36,7 @@
   <div id="header-outer" class="outer">
     <div id="header-title" class="inner">
       <h1 id="logo-wrap">
-        <a href="/" id="logo">Hexo</a>
+        <a href="/" id="logo">Blog</a>
       </h1>
       
     </div>
@@ -64,6 +64,67 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-grub" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/10/21/grub/" class="article-date">
+  <time datetime="2020-10-21T05:45:34.000Z" itemprop="datePublished">2020-10-21</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/10/21/grub/">Grub rescue 修复引导</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="grub-rescue-修复引导"><a href="#grub-rescue-修复引导" class="headerlink" title="grub rescue 修复引导"></a>grub rescue 修复引导</h1><p>1.<strong><em>进入 normal 模式:</em></strong></p>
+<ul>
+<li><p>set</p>
+</li>
+<li><p>ls (hdx,y)/boot/grub/</p>
+</li>
+<li><p>set root=(hdx,y)</p>
+</li>
+<li><p>set prefix=(hdx,y)/boot/grub/</p>
+</li>
+<li><p>insmod normal</p>
+</li>
+<li><p>normal<br>2.<strong><em>启动 arch 重装 grub:</em></strong></p>
+</li>
+<li><p>grub-install –target=x86_64-efi –efi-directory=/boot/EFI –bootloader-id=GRUB</p>
+</li>
+<li><p>grub-mkconfig -o /boot/grub/grub.cfg</p>
+</li>
+</ul>
+<p>3.<strong><em>重启结束</em></strong></p>
+<h1 id="更换主题"><a href="#更换主题" class="headerlink" title="更换主题"></a>更换主题</h1><p>直接下载主题，解压进入目录执行:</p>
+<pre><code>sudo ./install.sh</code></pre>
+<h1 id="win10-arch-双引导"><a href="#win10-arch-双引导" class="headerlink" title="win10+arch 双引导:"></a>win10+arch 双引导:</h1><p>挂在 win10 所在的 efi 目录,直接重新生 grubconfig 文件</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2020/10/21/grub/" data-id="ckgj3gcwv0002p4pi257809nc" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Archlinux-grub/" rel="tag">Archlinux grub</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-begin" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2020/10/12/begin/" class="article-date">
@@ -90,7 +151,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2020/10/12/begin/" data-id="ckg6oyp8q0000l5pibb619xap" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2020/10/12/begin/" data-id="ckgj3gcwn0000p4piacy96p5d" class="article-share-link">Share</a>
       
       
     </footer>
@@ -139,7 +200,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2020/10/12/hello-world/" data-id="ckg6oyp9c0001l5pi2nno9y6m" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2020/10/12/hello-world/" data-id="ckgj3gcwt0001p4pihkgv2gb6" class="article-share-link">Share</a>
       
       
     </footer>
@@ -159,9 +220,23 @@
 
   
     
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Archlinux-grub/" rel="tag">Archlinux grub</a></li></ul>
+    </div>
+  </div>
+
 
   
     
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/Archlinux-grub/" style="font-size: 10px;">Archlinux grub</a>
+    </div>
+  </div>
+
   
     
   <div class="widget-wrap">
@@ -178,6 +253,10 @@
     <h3 class="widget-title">Recent Posts</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2020/10/21/grub/">Grub rescue 修复引导</a>
+          </li>
         
           <li>
             <a href="/2020/10/12/begin/">开个博客,随便写写</a>
@@ -199,7 +278,7 @@
   
   <div class="outer">
     <div id="footer-info" class="inner">
-      &copy; 2020 John Doe<br>
+      &copy; 2020 LDW<br>
       Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
     </div>
   </div>
