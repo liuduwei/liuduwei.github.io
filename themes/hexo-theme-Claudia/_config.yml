@@ -1,0 +1,40 @@
+# main menu navigation
+menu:
+  Home: /
+  About: /about
+  Archive: /archives
+
+widgets:
+  - tag
+  - archive
+  - recent_posts
+  - category
+
+# social config
+social:
+  zhihu:
+  twitter: /
+  facebook: /
+  linkedin:
+  instagram: /
+  github: liuduwei
+
+user:
+  name: CcrazyCaiNiao
+  avatar: avatar.jpg
+  location: Moon
+  description: May the Force be with you
+
+# documents: https://github.com/utterance/utterances
+# API config: https://utteranc.es/
+comment_utteranc:
+  enable: true
+  repo: https://github.com/liuduwei/liuduwei.github.io # your blog repo
+
+# dark
+# light
+# user-can-set
+appearance: dark
+
+# Miscellaneous
+favicon: favicon.ico
