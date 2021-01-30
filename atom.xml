@@ -106,13 +106,13 @@
   </entry>
   
   <entry>
-    <title>一些Git操作</title>
+    <title>Git操作备忘</title>
     <link href="http://example.com/2020/10/21/git/"/>
     <id>http://example.com/2020/10/21/git/</id>
-    <published>2020-10-21T08:08:32.000Z</published>
-    <updated>2020-10-21T08:15:30.898Z</updated>
+    <published>2020-10-21T16:08:32.000Z</published>
+    <updated>2021-01-30T02:23:30.981Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="push-到仓库"><a href="#push-到仓库" class="headerlink" title="push 到仓库"></a>push 到仓库</h1><ul><li>git init</li><li>git add .</li><li>git commit</li><li>git remote add [远程主机名] [url]</li><li>git push origin</li></ul>]]></content>
+    <content type="html"><![CDATA[<h1 id="push-到仓库"><a href="#push-到仓库" class="headerlink" title="push 到仓库"></a>push 到仓库</h1><ul><li>git init</li><li>git add .</li><li>git commit</li><li>git remote add [远程主机名] [url]</li><li>git push origin</li></ul><h1 id="子仓库-push-只有箭头"><a href="#子仓库-push-只有箭头" class="headerlink" title="子仓库 push 只有箭头"></a>子仓库 push 只有箭头</h1><ol><li>删掉本地文件夹，备份</li><li>正常 push 操作</li><li>放入文件夹再进行 push（git add _)<br>git add _ 忽略.gitgnore</li></ol><h1 id="git-免密-push"><a href="#git-免密-push" class="headerlink" title="git 免密 push"></a>git 免密 push</h1><h2 id="方法一：https-记住密码"><a href="#方法一：https-记住密码" class="headerlink" title="方法一：https 记住密码"></a>方法一：https 记住密码</h2><pre><code>     git config --global credential.helper store</code></pre><h2 id="方法二：ssh"><a href="#方法二：ssh" class="headerlink" title="方法二：ssh"></a>方法二：ssh</h2><pre><code>     git init     git config --global user.name ''     git config --global user.email ''     ssh-keygen -t rsa     cat ~/.ssh/id_rsa.pub</code></pre><p>主页 setting 加入公钥</p><pre><code>     git clone git@github.com:'project url'</code></pre>]]></content>
     
     
       
