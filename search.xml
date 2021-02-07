@@ -8,7 +8,7 @@
       <link href="2021/02/06/Arch%E6%9B%B4%E6%8D%A2kde/"/>
       <url>2021/02/06/Arch%E6%9B%B4%E6%8D%A2kde/</url>
       
-        <content type="html"><![CDATA[<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p>sudo pacman -S sddm plasma kde-applications<br>sudo systemctl disable gdm<br>sudo systemctl enable sddm</p><p>先这样吧，暂时还有点问题，plasma 启动只显示桌面，折腾了一晚上，没有解决。。，本来说晚上学习的，结果搞成这样了<br>不得不说 sddm+gnome 真的丑到爆，中文字体扭的看都看不清楚</p>]]></content>
+        <content type="html"><![CDATA[<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p>sudo pacman -S sddm plasma kde-applications<br>sudo systemctl disable gdm<br>sudo systemctl enable sddm</p><h1 id="to-do"><a href="#to-do" class="headerlink" title="to do"></a>to do</h1><ol><li>解决 Kde 桌面开机卡一分钟</li><li>设置快捷键<ul><li>截图快捷键:选取 alt+3，保存 alt+4</li><li>复制粘贴:alt+c，v</li><li>search:ctrl+space</li></ul></li><li>设置应用启动台</li></ol><h1 id="issue"><a href="#issue" class="headerlink" title="issue"></a>issue</h1><ol><li>全局快捷键无法设置</li><li>开机卡桌面一分钟</li></ol>]]></content>
       
       
       
