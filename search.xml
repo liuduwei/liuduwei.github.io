@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>更换gnome默认directory</title>
+      <link href="2021/02/07/%E6%9B%B4%E6%8D%A2gnome%E9%BB%98%E8%AE%A4directory/"/>
+      <url>2021/02/07/%E6%9B%B4%E6%8D%A2gnome%E9%BB%98%E8%AE%A4directory/</url>
+      
+        <content type="html"><![CDATA[<ol><li>直接删除自带文件浏览器 ducument，再安装</li><li><a href="https://www.gauthampdas.com/blog/tech/linux/resetting-default-file-manager-in-gnome">https://www.gauthampdas.com/blog/tech/linux/resetting-default-file-manager-in-gnome</a></li></ol>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> Archlinux Gnome </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Archlinux垃圾清理</title>
       <link href="2021/02/07/Archlinux-pacman/"/>
       <url>2021/02/07/Archlinux-pacman/</url>
