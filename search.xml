@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>我的快捷键设置—Arch</title>
+      <link href="2021/02/07/%E6%88%91%E7%9A%84%E5%BF%AB%E6%8D%B7%E9%94%AE%E8%AE%BE%E7%BD%AE%E2%80%94Arch/"/>
+      <url>2021/02/07/%E6%88%91%E7%9A%84%E5%BF%AB%E6%8D%B7%E9%94%AE%E8%AE%BE%E7%BD%AE%E2%80%94Arch/</url>
+      
+        <content type="html"><![CDATA[<h1 id="快捷键如下"><a href="#快捷键如下" class="headerlink" title="快捷键如下"></a>快捷键如下</h1><table><thead><tr><th>Function</th><th>key</th></tr></thead><tbody><tr><td>搜索</td><td>mate/win</td></tr><tr><td>截图</td><td>alt+3</td></tr><tr><td>窗口移动</td><td>alt+1</td></tr><tr><td>terminator</td><td>alt+t</td></tr><tr><td>文件管理</td><td>mate+e</td></tr></tbody></table>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> Archlinux </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Arch从gnome更换到Kdej</title>
       <link href="2021/02/06/Arch%E6%9B%B4%E6%8D%A2kde/"/>
       <url>2021/02/06/Arch%E6%9B%B4%E6%8D%A2kde/</url>
