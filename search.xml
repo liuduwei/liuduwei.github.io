@@ -4,11 +4,30 @@
   
     
     <entry>
+      <title>Archlinux垃圾清理</title>
+      <link href="2021/02/07/Archlinux-pacman/"/>
+      <url>2021/02/07/Archlinux-pacman/</url>
+      
+        <content type="html"><![CDATA[<h1 id="安全卸载软件包及其依赖"><a href="#安全卸载软件包及其依赖" class="headerlink" title="安全卸载软件包及其依赖"></a>安全卸载软件包及其依赖</h1><p>sudo pacman -Rs<br>sudo pacman -R $(pacman -Qdtq)</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> Archlinx Pacman </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>我的快捷键设置—Arch</title>
       <link href="2021/02/07/%E6%88%91%E7%9A%84%E5%BF%AB%E6%8D%B7%E9%94%AE%E8%AE%BE%E7%BD%AE%E2%80%94Arch/"/>
       <url>2021/02/07/%E6%88%91%E7%9A%84%E5%BF%AB%E6%8D%B7%E9%94%AE%E8%AE%BE%E7%BD%AE%E2%80%94Arch/</url>
       
-        <content type="html"><![CDATA[<h1 id="快捷键如下"><a href="#快捷键如下" class="headerlink" title="快捷键如下"></a>快捷键如下</h1><table><thead><tr><th>Function</th><th>key</th></tr></thead><tbody><tr><td>搜索</td><td>mate/win</td></tr><tr><td>截图</td><td>alt+3</td></tr><tr><td>窗口移动</td><td>alt+1</td></tr><tr><td>terminator</td><td>alt+t</td></tr><tr><td>文件管理</td><td>mate+e</td></tr></tbody></table>]]></content>
+        <content type="html"><![CDATA[<h1 id="全局快捷键"><a href="#全局快捷键" class="headerlink" title="全局快捷键"></a>全局快捷键</h1><table><thead><tr><th>Function</th><th>key</th></tr></thead><tbody><tr><td>搜索</td><td>mate/win</td></tr><tr><td>窗口切换</td><td>mate/win+tab</td></tr><tr><td>标签切换</td><td>alt+tab</td></tr><tr><td>窗口 resize</td><td>alt+1</td></tr><tr><td>dict</td><td>alt+2</td></tr><tr><td>截图</td><td>alt+3</td></tr><tr><td>输入法中英文</td><td>shift</td></tr><tr><td>关闭窗口</td><td>alt+q</td></tr><tr><td>always on top</td><td>alt+4</td></tr><tr><td>截图</td><td>alt+3</td></tr></tbody></table>]]></content>
       
       
       
