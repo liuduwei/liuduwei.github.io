@@ -10,5 +10,16 @@ sudo pacman -S sddm plasma kde-applications
 sudo systemctl disable gdm
 sudo systemctl enable sddm
 
-先这样吧，暂时还有点问题，plasma 启动只显示桌面，折腾了一晚上，没有解决。。，本来说晚上学习的，结果搞成这样了
-不得不说 sddm+gnome 真的丑到爆，中文字体扭的看都看不清楚
+# to do
+
+1. 解决 Kde 桌面开机卡一分钟
+2. 设置快捷键
+   - 截图快捷键:选取 alt+3，保存 alt+4
+   - 复制粘贴:alt+c，v
+   - search:ctrl+space
+3. 设置应用启动台
+
+# issue
+
+1. 全局快捷键无法设置
+2. 开机卡桌面一分钟
