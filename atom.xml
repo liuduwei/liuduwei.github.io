@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2021-02-07T15:53:50.259Z</updated>
+  <updated>2021-02-08T07:22:52.273Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -17,37 +17,35 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>更换gnome默认directory</title>
-    <link href="http://example.com/2021/02/07/%E6%9B%B4%E6%8D%A2gnome%E9%BB%98%E8%AE%A4directory/"/>
-    <id>http://example.com/2021/02/07/%E6%9B%B4%E6%8D%A2gnome%E9%BB%98%E8%AE%A4directory/</id>
-    <published>2021-02-07T20:58:44.000Z</published>
-    <updated>2021-02-07T15:53:50.259Z</updated>
+    <title>Archlinux-gnome-optimus</title>
+    <link href="http://example.com/2021/02/08/Archlinux-gnome-optimus/"/>
+    <id>http://example.com/2021/02/08/Archlinux-gnome-optimus/</id>
+    <published>2021-02-08T14:49:50.000Z</published>
+    <updated>2021-02-08T07:22:52.273Z</updated>
     
-    <content type="html"><![CDATA[<ol><li>直接删除自带文件浏览器 ducument，再安装</li><li><a href="https://www.gauthampdas.com/blog/tech/linux/resetting-default-file-manager-in-gnome">https://www.gauthampdas.com/blog/tech/linux/resetting-default-file-manager-in-gnome</a></li></ol>]]></content>
+    <content type="html"><![CDATA[<h1 id="效果如下"><a href="#效果如下" class="headerlink" title="效果如下:"></a>效果如下:</h1><p><img src="/../images/overlook.png" alt="overlook"><br><img src="/../images/neofetch.png" alt="neofetch"><br><img src="/../images/nemo.png" alt="directory"><br><img src="/../images/tweak.png" alt="tweak"></p><h1 id="安装"><a href="#安装" class="headerlink" title="安装:"></a>安装:</h1><blockquote><p>所有主题均在<a href="https://www.pling.com/s/Gnome/browse">GNOME-LOOK.ORG</a>安装</p></blockquote><ol><li>sudo pacman -S ocs-url</li><li>点击主题右窗口install</li></ol>]]></content>
     
     
       
       
-    <summary type="html">&lt;ol&gt;
-&lt;li&gt;直接删除自带文件浏览器 ducument，再安装&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://www.gauthampdas.com/blog/tech/linux/resetting-default-file-manager-in-gnome&quot;&gt;htt</summary>
+    <summary type="html">&lt;h1 id=&quot;效果如下&quot;&gt;&lt;a href=&quot;#效果如下&quot; class=&quot;headerlink&quot; title=&quot;效果如下:&quot;&gt;&lt;/a&gt;效果如下:&lt;/h1&gt;&lt;p&gt;&lt;img src=&quot;/../images/overlook.png&quot; alt=&quot;overlook&quot;&gt;&lt;br&gt;&lt;img s</summary>
       
     
     
     
     
-    <category term="Archlinux Gnome" scheme="http://example.com/tags/Archlinux-Gnome/"/>
+    <category term="Archlinux Gnome optimus" scheme="http://example.com/tags/Archlinux-Gnome-optimus/"/>
     
   </entry>
   
   <entry>
-    <title>Archlinux垃圾清理</title>
+    <title>Archlinux卸载软件</title>
     <link href="http://example.com/2021/02/07/Archlinux-pacman/"/>
     <id>http://example.com/2021/02/07/Archlinux-pacman/</id>
     <published>2021-02-07T16:05:17.000Z</published>
-    <updated>2021-02-07T15:53:50.259Z</updated>
+    <updated>2021-02-08T07:22:52.273Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="安全卸载软件包及其依赖"><a href="#安全卸载软件包及其依赖" class="headerlink" title="安全卸载软件包及其依赖"></a>安全卸载软件包及其依赖</h1><p>sudo pacman -Rs<br>sudo pacman -R $(pacman -Qdtq)</p>]]></content>
+    <content type="html"><![CDATA[<h1 id="安全卸载软件包及其依赖"><a href="#安全卸载软件包及其依赖" class="headerlink" title="安全卸载软件包及其依赖"></a>安全卸载软件包及其依赖</h1><p>sudo pacman -Rs<br>sudo pacman -R $(pacman -Qdtq)<br>sudo pacamn -Rsu</p>]]></content>
     
     
       
@@ -58,204 +56,7 @@
     
     
     
-    <category term="Archlinx Pacman" scheme="http://example.com/tags/Archlinx-Pacman/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>我的快捷键设置—Arch</title>
-    <link href="http://example.com/2021/02/07/%E6%88%91%E7%9A%84%E5%BF%AB%E6%8D%B7%E9%94%AE%E8%AE%BE%E7%BD%AE%E2%80%94Arch/"/>
-    <id>http://example.com/2021/02/07/%E6%88%91%E7%9A%84%E5%BF%AB%E6%8D%B7%E9%94%AE%E8%AE%BE%E7%BD%AE%E2%80%94Arch/</id>
-    <published>2021-02-07T14:20:34.000Z</published>
-    <updated>2021-02-07T15:53:50.259Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="全局快捷键"><a href="#全局快捷键" class="headerlink" title="全局快捷键"></a>全局快捷键</h1><table><thead><tr><th>Function</th><th>key</th></tr></thead><tbody><tr><td>搜索</td><td>mate/win</td></tr><tr><td>窗口切换</td><td>mate/win+tab</td></tr><tr><td>标签切换</td><td>alt+tab</td></tr><tr><td>窗口 resize</td><td>alt+1</td></tr><tr><td>dict</td><td>alt+2</td></tr><tr><td>截图</td><td>alt+3</td></tr><tr><td>输入法中英文</td><td>shift</td></tr><tr><td>关闭窗口</td><td>alt+q</td></tr><tr><td>always on top</td><td>alt+4</td></tr><tr><td>截图</td><td>alt+3</td></tr></tbody></table>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h1 id=&quot;全局快捷键&quot;&gt;&lt;a href=&quot;#全局快捷键&quot; class=&quot;headerlink&quot; title=&quot;全局快捷键&quot;&gt;&lt;/a&gt;全局快捷键&lt;/h1&gt;&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;Function&lt;/th&gt;
-&lt;th&gt;key&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/t</summary>
-      
-    
-    
-    
-    
-    <category term="Archlinux" scheme="http://example.com/tags/Archlinux/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Arch从gnome更换到Kdej</title>
-    <link href="http://example.com/2021/02/06/Arch%E6%9B%B4%E6%8D%A2kde/"/>
-    <id>http://example.com/2021/02/06/Arch%E6%9B%B4%E6%8D%A2kde/</id>
-    <published>2021-02-06T21:31:29.000Z</published>
-    <updated>2021-02-07T15:53:50.259Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p>sudo pacman -S sddm plasma kde-applications<br>sudo systemctl disable gdm<br>sudo systemctl enable sddm</p><h1 id="to-do"><a href="#to-do" class="headerlink" title="to do"></a>to do</h1><ol><li>解决 Kde 桌面开机卡一分钟</li><li>设置快捷键<ul><li>截图快捷键:选取 alt+3，保存 alt+4</li><li>复制粘贴:alt+c，v</li><li>search:ctrl+space</li></ul></li><li>设置应用启动台</li></ol><h1 id="issue"><a href="#issue" class="headerlink" title="issue"></a>issue</h1><ol><li>全局快捷键无法设置</li><li>开机卡桌面一分钟</li></ol>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h2 id=&quot;安装&quot;&gt;&lt;a href=&quot;#安装&quot; class=&quot;headerlink&quot; title=&quot;安装&quot;&gt;&lt;/a&gt;安装&lt;/h2&gt;&lt;p&gt;sudo pacman -S sddm plasma kde-applications&lt;br&gt;sudo systemctl disable </summary>
-      
-    
-    
-    
-    
-    <category term="Archlinux Kde" scheme="http://example.com/tags/Archlinux-Kde/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>如何克服粗心</title>
-    <link href="http://example.com/2021/01/28/%E5%A6%82%E4%BD%95%E5%85%8B%E6%9C%8D%E7%B2%97%E5%BF%83/"/>
-    <id>http://example.com/2021/01/28/%E5%A6%82%E4%BD%95%E5%85%8B%E6%9C%8D%E7%B2%97%E5%BF%83/</id>
-    <published>2021-01-28T14:26:38.000Z</published>
-    <updated>2021-02-05T15:57:30.061Z</updated>
-    
-    <content type="html"><![CDATA[<blockquote><p>我要是继续粗心下去，不仅考不上，早晚会吃大亏的</p></blockquote><h2 id="措施"><a href="#措施" class="headerlink" title="措施"></a>措施</h2><ol><li>看题目的时候默读一个字一个字的看，据说有效，试一试</li><li>草稿本上写题目的时候(写的时候默念出声来)，先把原题抄下来，写好，再开始做解答</li><li>做题目不要跳步，一步一步写下来，先慢慢来</li></ol><ul><li><p>先这样做，如果好起来了，可以慢慢的试着口算了，但是最重要的还是准确率</p></li><li><p>今天是 2 月 3 号，写作业比较注意过后，粗心有很大的改善，继续加油噢.要是生活上再细心一些就好了，具体怎么做，明天晚上再思考思考</p></li></ul><p>二月 5 号，太粗心了，虽然有改善，但是还是很离谱，明天我写题目默念出来吧，应该会好一点</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;blockquote&gt;
-&lt;p&gt;我要是继续粗心下去，不仅考不上，早晚会吃大亏的&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&quot;措施&quot;&gt;&lt;a href=&quot;#措施&quot; class=&quot;headerlink&quot; title=&quot;措施&quot;&gt;&lt;/a&gt;措施&lt;/h2&gt;&lt;ol&gt;
-&lt;li&gt;看题目的时候</summary>
-      
-    
-    
-    
-    
-    <category term="study" scheme="http://example.com/tags/study/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>每日学习状态日志</title>
-    <link href="http://example.com/2021/01/21/%E6%AF%8F%E6%97%A5%E5%AD%A6%E4%B9%A0%E7%8A%B6%E6%80%81%E8%AE%B0%E5%BD%95/"/>
-    <id>http://example.com/2021/01/21/%E6%AF%8F%E6%97%A5%E5%AD%A6%E4%B9%A0%E7%8A%B6%E6%80%81%E8%AE%B0%E5%BD%95/</id>
-    <published>2021-01-21T13:38:27.000Z</published>
-    <updated>2021-02-07T15:53:50.263Z</updated>
-    
-    <content type="html"><![CDATA[<blockquote><p>记录每天学习状态好坏的细节,让自己每天的状态都很好</p></blockquote><blockquote><p>开始时间 ✌ ： 2021-01-21</p></blockquote><h1 id="📅-2021-01-21"><a href="#📅-2021-01-21" class="headerlink" title="📅 2021-01-21:"></a>📅 2021-01-21:</h1><h2 id="基础信息"><a href="#基础信息" class="headerlink" title="基础信息"></a>基础信息</h2><ul><li>天气:晴朗</li><li>醒来：8.02（11.50+bilibili)</li><li>三餐：<ul><li>9.00（面条+辣椒）</li><li>14.20(猪肉+葱油病+萝卜)</li></ul></li><li>零食：上午小块面包</li><li>饮水：白水（较少）</li><li>课余休息方式：冥想（趴着+music）</li><li>午休方式: 无</li><li>晚饭：汤圆</li><li>饭后活动：坐车接我妈，然后被按摩店捕捉</li><li>睡觉：23：00</li></ul><hr><h2 id="状态记录"><a href="#状态记录" class="headerlink" title="状态记录"></a>状态记录</h2><ul><li><p>8:14————（40min ）anki 单词</p><ul><li>状态：2.5/5</li><li>分析原因：没起床，边睡边背</li></ul></li></ul><hr><ul><li><p>10:00—————(30+30-20+30+15) 不定积分</p><ul><li>状态: 3 （较为专注但是准确率极差 2/14）</li><li>分析原因: (影响因子依次减弱)<ol><li>没睡好</li><li>喝水太少，建议喝茶</li><li>-20 为聊了 2 句 wechat，玩了 coc</li></ol></li><li>改进方案:早睡，睡满质量优秀的 8h;休息期间尽量冥想;</li></ul><hr></li><li><p>3:00—————(total 95min) 不定积分演算</p><ul><li>状态：3.5 （前期专注度较高）</li><li>分析原因：<ol><li>下午没休息好</li><li>forest 时间调整多了</li><li>想起 terminator 给桃宝聊了几句</li><li>老爸回家，朋友发消息问我事情 j</li></ol></li><li>改进方案：<ol><li>下午建议休息 30 分钟（冥想最好）;</li><li>forest 之后后面一定一定要递减 ;</li><li>不能专注过后马上休息 5-10min ;</li><li>想起什么事不能发消息，记下来，之后再做</li></ol></li></ul><hr></li><li><p>9:00——————（50min) 记单词</p><ul><li>状态：4.5</li><li>分析原因：<ol><li>之前有按摩放松</li><li>之前聊了几句 wechat</li></ol></li><li>改进方案：<ol><li>少看手机少看机，尽量不要闲聊</li></ol></li></ul></li></ul><hr><h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><blockquote><p>总学习时间:5h 较少（自己做了午饭）</p></blockquote><ol><li><p>少看手机少看机，尽量不要闲聊</p></li><li><p>下午建议休息 30 分钟（冥想最好)</p></li><li><p>想起什么事不能发消息，记下来，之后再做</p><hr></li></ol><h1 id="📅-2021-01-22"><a href="#📅-2021-01-22" class="headerlink" title="📅 2021-01-22:"></a>📅 2021-01-22:</h1><h2 id="基础信息-1"><a href="#基础信息-1" class="headerlink" title="基础信息"></a>基础信息</h2><ul><li>天气:晴朗</li><li>醒来：8.14(12:00-5:00 梦到 wyn 了醒了，到 7 点睡着的)</li><li>三餐：<ul><li>9.00（面条）</li><li>14.20(回锅肉+青菜)</li></ul></li><li>零食：无</li><li>饮水：茶（一般）</li><li>课余休息方式：冥想（趴着+music）</li><li>午休方式: 躺床上听(廖 xn 的前世今生,有点模糊但没有睡着)</li><li>午休后活动：打球(5:00)回家</li><li>晚饭：汤圆</li><li>饭后活动:ipad(coc+icity+wechat)</li></ul><hr><h2 id="状态记录-1"><a href="#状态记录-1" class="headerlink" title="状态记录"></a>状态记录</h2><ul><li><p>8:30———（50min ）anki 单词</p><ul><li>状态：3.0/5(好像早上起来我都不咋行,饭前)</li><li>分析原因：起床了，专注也还行，但是就是他妈记不住</li></ul></li></ul><hr><ul><li><p>饭后- 10：40 （划水 😄,裂开了，突然想到玄学存不存在，上知乎看了 40 分钟，结果未知)</p></li><li><p>10:40—————(裂开了啊，本来计划 10 点开搞的 💢) 不定积分</p><ul><li>状态: 4.5 （及其牛逼,但还能更强,错的全是弱智错误 6/10）</li><li>分析原因: (与昨天相比，我是喝的茶，而且我爸老是叫我，也比昨天牛逼)<ol><li>我只睡了 5+1 个小时，为啥好精神，今天，可能式昨天按摩了</li></ol></li><li>改进方案:再细心点啊你，真的从小粗心到大，我尽量改啊</li></ul><hr></li><li><p>3:00—————5:00 打球</p><hr></li><li><p>7:00———9:30(中间乱七八糟大概用了 30 分钟) anki 一半单词数学公式，新东方绿皮书</p><ul><li>状态：3.8 (anki 前期很飘，后面慢慢专心起来了，背单词书状态还行，效果明天才知道，忘不忘)</li><li>分析原因：(我发现，晚上背单词，我好像比早上牛逼多了)<ol><li>6.50 几，还在玩手机 ipad，下次建议，前几分钟就静静</li><li>下午打了球，晚上我居然没感觉到累？</li><li>背玩 anki 拉屎回来，玩了玩 coc，然后心不在 yan 的盯了 7-8 分钟书把</li></ol></li><li>改进方案：<ol><li>下次拉屎，啥都不能带</li></ol></li></ul></li></ul><hr><h2 id="总结-1"><a href="#总结-1" class="headerlink" title="总结"></a>总结</h2><blockquote><p>总学习时间:4.5h 较少（下午打了球）</p></blockquote><ol><li>拉屎不带东西</li><li>真的社交再少点好吧，不过这次确实是，一学期没见的好兄弟们了</li><li>明天早上直接起来搞数学，anki 留着晚上复习，好像背的东西，我晚上弄，确实要牛逼一点，明天再试试</li><li>我要弄个备忘清单，白天有啥灵感应该及时记录下来，因为有时候有个想法，我怕忘记了，就马上弄一弄，结果直接打断正在做的事情; 记下来不会忘记具体可以等有时间再拓展</li><li>数学错题错误的原因，有用的，一定一定要马上记下来，然后当天晚上录到 anki 上去，一定要，晚上留一点时间！！ 这个应该是今天总结最重要的吧</li></ol><h2 id="End"><a href="#End" class="headerlink" title="End"></a>End</h2><p>今日下机时间<br>22:32:25</p><hr><h1 id="📅-2021-01-23"><a href="#📅-2021-01-23" class="headerlink" title="📅 2021-01-23:"></a>📅 2021-01-23:</h1><h2 id="基础信息-2"><a href="#基础信息-2" class="headerlink" title="基础信息"></a>基础信息</h2><ul><li>天气:晴朗</li><li>醒来：8.04(1:00-8.04 睡得比较差。。。中间热醒了一次 1234)</li><li>三餐：<ul><li>9.00（无）</li><li>14.20(回锅肉+青菜)</li><li>6:10(同中午)</li></ul></li><li>零食：无</li><li>饮水：白水（一般）</li><li>课余休息方式：冥想（趴着+music）</li><li>午休方式: 无(休息了 10 分钟，等于没有)</li></ul><hr><h2 id="状态记录-2"><a href="#状态记录-2" class="headerlink" title="状态记录"></a>状态记录</h2><ul><li><p>10:00———（50min ）不定积分</p><ul><li>状态：3.8/5(前晚上睡的不好，8 点醒了想睡又睡不着，躺尸后面玩了会儿手机到 9 点半才起来的，早饭也没做，cnm 我是 fw)</li><li>分析原因：虽然睡的不好但是还行</li><li>改进方案：睡的再不好，真的不要不起来，直接起来</li></ul></li></ul><hr><ul><li>2:00———2：30(做数学，我真的快睡着了，状态极差,基本都错了)<ul><li>状态：0.0 (一定要午休，我不午休好像就真不行)</li><li>分析原因：<ol><li>没有午休</li><li>前天晚上睡的很差</li></ol></li><li>改进方案：<ol><li>没啥好说的，休息好才行</li></ol></li></ul></li><li>3:00-5:00 (很困过后，玩了 30 分钟 coc，不太困了，又做数学，好一点，但是一样好错误,后面睡了一觉，醒来好多了)<ul><li>状态: 2.5</li><li>分析: 打游戏确实可以让快睡着的我好起来，但是做题依然效果很差</li><li>改进方案: 一定要午休，休息好了才行</li></ul></li></ul><hr><ul><li>7:00–10:10 (2h+alpha 脑波音乐) anki+新东方绿皮书<ul><li>状态: anki 3.5 xdf 4.0</li><li>分析:<ol><li>单词书&gt;anki</li><li>alpha 脑波音乐好像真的能提高专注度</li></ol></li><li>改进方案: 1.晚上记忆的时候，可以播放</li></ul></li></ul><hr><h2 id="总结-2"><a href="#总结-2" class="headerlink" title="总结"></a>总结</h2><blockquote><p>总学习时间:4.5h 较少（下午打了球）</p></blockquote><ol><li>一定要睡好，今天总体状态比较糟糕，比较 fw，方法上没啥改进的</li></ol><hr><h2 id="End-1"><a href="#End-1" class="headerlink" title="End"></a>End</h2><p>今日下机时间<br>22:56:19</p><h1 id="📅-2021-01-24"><a href="#📅-2021-01-24" class="headerlink" title="📅 2021-01-24:"></a>📅 2021-01-24:</h1><h2 id="基础信息-3"><a href="#基础信息-3" class="headerlink" title="基础信息"></a>基础信息</h2><ul><li>天气:阴</li><li>醒来：7.48(11:28 最近几天唯一睡的不错的一晚)</li><li>三餐：<ul><li>8.30（2*egg+1× 泡吧+1 碗稀饭+半个苹果）</li><li>14.20(香菇红萝卜炒肉+萝卜汤+炒油菜)</li><li>6:10(西兰花炒肉+青菜汤)</li></ul></li><li>零食：无</li><li>饮水：茶（一般）</li><li>课余休息方式：coc</li><li>午休方式: 睡觉(躺了 30min，没睡着，但很好的休息了)</li></ul><hr><h2 id="状态记录-3"><a href="#状态记录-3" class="headerlink" title="状态记录"></a>状态记录</h2><ul><li>全天状态都不错：</li><li>上午 10 点多的时候有些小困，好像我早上都会这样</li><li>晚上记单词状态特别好，有可能是晚饭后出去走了走</li></ul><hr><h2 id="总结-3"><a href="#总结-3" class="headerlink" title="总结"></a>总结</h2><blockquote><p>总学习时间:8h 还能再多一点（）</p></blockquote><ol><li>其实睡得好，我效率就特别高，希望能把自己的作息调整的很完美吧，今天很不错，明天继续保持</li></ol><hr><h2 id="End-2"><a href="#End-2" class="headerlink" title="End"></a>End</h2><p>今日下机时间<br>22:44:19</p><h1 id="📅-2021-01-25"><a href="#📅-2021-01-25" class="headerlink" title="📅 2021-01-25:"></a>📅 2021-01-25:</h1><h2 id="基础信息-4"><a href="#基础信息-4" class="headerlink" title="基础信息"></a>基础信息</h2><ul><li>天气:阴</li><li>醒来：9.00(6 点醒了一次，睡得不太好)</li><li>三餐：<ul><li>9.30（2*egg+ 面包）</li><li>14.20(面包)</li><li>6:10(西兰花炒肉+豆腐+油菜)</li></ul></li><li>零食：无</li><li>饮水：茶（一般）</li><li>课余休息方式：coc</li><li>午休方式: 睡觉(躺了 30min，没睡着，脑子也很乱，没有很好的休息好，可能是躺在床上没有乱想的原因)</li></ul><hr><h2 id="状态记录-4"><a href="#状态记录-4" class="headerlink" title="状态记录"></a>状态记录</h2><ul><li>全天状态都不太行：</li><li>晚上也很困，洗完澡才背的单词，今天确实很松散</li></ul><hr><h2 id="总结-4"><a href="#总结-4" class="headerlink" title="总结"></a>总结</h2><blockquote><p>总学习时间:4h(找了一上午的数学资源)</p></blockquote><ol><li>真的是休息的好，效率才高，1234xxx，今天就当休息了吧，继续加油！</li></ol><hr><h2 id="End-3"><a href="#End-3" class="headerlink" title="End"></a>End</h2><p>今日下机时间<br>23:16:41</p><h1 id="📅-2021-01-26"><a href="#📅-2021-01-26" class="headerlink" title="📅 2021-01-26:"></a>📅 2021-01-26:</h1><h2 id="基础信息-5"><a href="#基础信息-5" class="headerlink" title="基础信息"></a>基础信息</h2><ul><li>天气:阴</li><li>醒来：9.00(早些时候醒了一次，睡的不太好)</li><li>三餐：<ul><li>9.30（汤圆）</li><li>14.20(蛋炒饭)</li><li>6:10(凉拌鸡肉+青菜萝卜+油菜)</li></ul></li><li>零食：面包</li><li>饮水：白水（较少）</li><li>课余休息方式：coc</li><li>午休方式: 睡觉（睡了 30 分钟，睡的非常好，真的是秒睡，可能是太累了吧）</li></ul><hr><h2 id="状态记录-5"><a href="#状态记录-5" class="headerlink" title="状态记录"></a>状态记录</h2><ul><li>全天状态都还行：</li></ul><hr><h2 id="总结-5"><a href="#总结-5" class="headerlink" title="总结"></a>总结</h2><blockquote><p>总学习时间:3h(折腾了一上午的双显卡，下午 3 点开始学到 5 点，晚上背的单词)</p></blockquote><ol><li>休息好，每天 11 点前睡着</li><li>一定要午睡，我现在真的瞬间记忆越来越好了，30 分钟不到一个 list 的单词就记的好牢，大概第三天才会忘记，我好像记忆曲线很奇怪</li></ol><hr><h2 id="End-4"><a href="#End-4" class="headerlink" title="End"></a>End</h2><p>今日下机时间<br>22:31:30</p><h1 id="📅-2021-01-27"><a href="#📅-2021-01-27" class="headerlink" title="📅 2021-01-27:"></a>📅 2021-01-27:</h1><h2 id="基础信息-6"><a href="#基础信息-6" class="headerlink" title="基础信息"></a>基础信息</h2><ul><li>天气:阴 -起床：11:00 - 8.00(6 点时候醒了，1234 犹豫要不要起来，还是算了，继续睡，睡到 7 点 48)</li><li>三餐：<ul><li>8:30（鸡蛋+粑+鸡汤）</li><li>14.20(炖萝卜炖牛肉+烟熏青蛙)</li><li>6:10(同中午+凉拌萝卜丝)</li></ul></li><li>零食：无</li><li>饮水：白水(中偏少)</li><li>课余休息方式：coc</li><li>午休方式: 睡觉（睡了 30 分钟，睡的非常好）</li></ul><hr><h2 id="状态记录-6"><a href="#状态记录-6" class="headerlink" title="状态记录"></a>状态记录</h2><ul><li>下午状态不太好哦，其实今天都有点浮躁，我心里还嘲讽自己，这才几天就没有斗志了吗，但是还是不太静的下来<br>晚上不知道为啥头有点疼（1234）,但是还是坚持看完了一节数学，背了单词，虽然比较拖延，看了 40min 的视频</li></ul><hr><h2 id="总结-6"><a href="#总结-6" class="headerlink" title="总结"></a>总结</h2><blockquote><p>总学习时间:6h(莫名其妙没啥感觉就学了 6 小时，但是确实是实实在在的学了这么久)</p></blockquote><ol><li>休息好,要休息好</li><li>番茄时钟中间还是冥想好一点，尤其是比较浮躁的时候，还是不要玩 coc，其实不知道我的静不下来是，精力不够还是就是单纯的心不静，再观察观察吧<br>如果精力不够就不能玩 coc 了，课余好好的休息回复精力</li></ol><hr><h2 id="End-5"><a href="#End-5" class="headerlink" title="End"></a>End</h2><p>今日下机时间<br>22:39:00</p><h1 id="📅-2021-01-28"><a href="#📅-2021-01-28" class="headerlink" title="📅 2021-01-28:"></a>📅 2021-01-28:</h1><h2 id="基础信息-7"><a href="#基础信息-7" class="headerlink" title="基础信息"></a>基础信息</h2><ul><li>天气:阴</li><li>起床：11:00 - 9:00(早些时候醒了，瞬间又睡着了)</li><li>三餐：<ul><li>8:30（鸡蛋+粑+牛肉汤）</li><li>14.20(蒸饺+青菜)</li><li>6:10(同中午+凉拌萝卜丝)</li></ul></li><li>零食：无</li><li>饮水：白水(中偏少)</li><li>课余休息方式：coc</li><li>午休方式: 睡觉（睡了 30 分钟，睡的非常好）</li></ul><hr><h2 id="状态记录-7"><a href="#状态记录-7" class="headerlink" title="状态记录"></a>状态记录</h2><p>状态一般，就是写数学太粗心了，怎麽克服粗心我打算好好的落实下来</p><h2 id="总结-7"><a href="#总结-7" class="headerlink" title="总结"></a>总结</h2><blockquote><p>总学习时间:5.5h(太少了不够阿)</p></blockquote><ol><li>从今晚上开始，设置一个 7 点半的闹钟，每天早上都会醒一次，再睡就没必要了</li><li>从今天晚上开始，每天晚上喝一杯牛奶，希望能睡的好一点</li><li>番茄时钟不要设一个小时，我好像只能专注 50 分钟左右，慢慢一点一点的加，coc 等休息时间久一点再玩吧</li><li>从今晚上开始，克服粗心的习惯，具体怎么做我打算另外写下来</li></ol><hr><h2 id="End-6"><a href="#End-6" class="headerlink" title="End"></a>End</h2><p>今日下机时间<br>22:50:00</p><h1 id="📅-2021-01-29"><a href="#📅-2021-01-29" class="headerlink" title="📅 2021-01-29:"></a>📅 2021-01-29:</h1><h2 id="基础信息-8"><a href="#基础信息-8" class="headerlink" title="基础信息"></a>基础信息</h2><ul><li>天气:晴</li><li>起床：11:00 - 9:00(睡得真的不好啊，我好像有点失眠了，晚上睡得都不咋好，莫名其妙要醒晚上)</li><li>三餐：<ul><li>8:30（2*鸡蛋+牛奶+汤圆）</li><li>14.20(鱼肉)</li><li>6:10(饺子)</li></ul></li><li>零食：无</li><li>饮水：白水(中)</li><li>课余休息方式：coc</li><li>午休方式: 无</li></ul><hr><h2 id="状态记录-8"><a href="#状态记录-8" class="headerlink" title="状态记录"></a>状态记录</h2><p>状态上午还行吧，粗心有改善，但是还是不太行，下午和我妈吵架了，气得我一下午+晚上都歇逼了，晚上头疼。。。6 点 50 还睡到了 8 点</p><h2 id="总结-8"><a href="#总结-8" class="headerlink" title="总结"></a>总结</h2><blockquote><p>总学习时间:3.5h(太少了不够阿)</p></blockquote><ol><li>我真的好像睡的很差，不管了，反正闹铃响起来</li><li>今天开始躺床上背背数学公式，一会儿就困了</li><li>其实今天虽然之学了 3.5 小时，但是我觉得也还行，今天真的起来的又晚，中午回了外婆家，下午还和我妈吵架了<br>今天上午之后都是很烦很烦，下午做数学题做的想锤桌子，想打人，做不进去没办法，上知呼搜了好多心烦怎麽办的哈哈，<br>还是比以前好了，控制情绪加油，晚上头疼，特被烦，但是还是坚持被完了单词！</li></ol><hr><h2 id="End-7"><a href="#End-7" class="headerlink" title="End"></a>End</h2><p>今日下机时间<br>22:31:00</p><h1 id="📅-2021-01-30"><a href="#📅-2021-01-30" class="headerlink" title="📅 2021-01-30:"></a>📅 2021-01-30:</h1><p>今天折腾了一上午 Blog，下午回外婆家了，就中间背了 anki 和一个 list 的单词<br>😄 该玩还得玩，真的得珍惜能和家人相处的时光 😢</p><h1 id="📅-2021-01-31"><a href="#📅-2021-01-31" class="headerlink" title="📅 2021-01-31:"></a>📅 2021-01-31:</h1><p>一样。。外婆家</p><h1 id="📅-2021-02-1"><a href="#📅-2021-02-1" class="headerlink" title="📅 2021-02-1:"></a>📅 2021-02-1:</h1><p>新的一个月。好离谱今天，我可能用眼过多了，还是太困了，眼睛一聚焦就好累。背玩单词早点休息了</p><h1 id="📅-2021-02-2"><a href="#📅-2021-02-2" class="headerlink" title="📅 2021-02-2:"></a>📅 2021-02-2:</h1><p>今天晚上 7 点多的时候状态不咋好，因为没有睡午觉，这个时间我必有点困<br>效率不错，今天，特别晚上有 cube 辅助，真的时间利用好太多了，我感觉这 130 花的真不错</p><h1 id="📅-2021-02-3"><a href="#📅-2021-02-3" class="headerlink" title="📅 2021-02-3:"></a>📅 2021-02-3:</h1><p>今天虽然一下午都没有学习去医院看病了，但是上午晚上效率真的好高，有了 cubi 过后我完全不会用手机了，时间管理真的好了好多，真的每时每刻都利用起来了!</p><p>唉，明天又要去看牙，一下午又没了，真的太耽误时间了，所以晚上我多背了一个 list 的单词，希望明天能用 anki 好好的复习，把时间都重复的利用起来</p><p>健康真的是太重要了啊，无病无灾就是最大的快乐了，那些得了绝症的人都能坦然面对，过好每一天，我们普通人比起来真的太幸福了，所以认真充实过好每一天吧</p><h1 id="📅-2021-02-5"><a href="#📅-2021-02-5" class="headerlink" title="📅 2021-02-5:"></a>📅 2021-02-5:</h1><p>昨天做了手术，所以太累了没用总结唉，今天上午睡到 9 点才起来的，10 点开始学，但是一直划水，直到下午才开始好好学，到晚上学了 6 个小时，终于算是把微分方程学完了，年前完成高数上指日可待，就浆，还是太粗心了阿</p><h1 id="📅-2021-02-6"><a href="#📅-2021-02-6" class="headerlink" title="📅 2021-02-6:"></a>📅 2021-02-6:</h1><p>今天去 lyf 家里玩了一天，晚上 7 点多到家，又说换个 kde 玩玩，结果折腾到现在，啥也没干，真的，太费时间了我服了，下次遇到问题直接不弄了<br>现阶段还是学习重要的啊!</p><h1 id="📅-2021-02-7"><a href="#📅-2021-02-7" class="headerlink" title="📅 2021-02-7:"></a>📅 2021-02-7:</h1><p>废物的一天从折腾 linux 开始，这个真的是个巨坑，太耗时间了啊，今天就只有晚上复习了 anki 被了单词，白天全在查 wiki，真的上头。kde 没弄好，倒是把 gnome 的主题都换了，真挺好看的</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;blockquote&gt;
-&lt;p&gt;记录每天学习状态好坏的细节,让自己每天的状态都很好&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;开始时间 ✌ ： 2021-01-21&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h1 id=&quot;📅-2021-01-21&quot;&gt;&lt;a </summary>
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>vim操作技巧</title>
-    <link href="http://example.com/2021/01/15/vim%E6%93%8D%E4%BD%9C%E6%8A%80%E5%B7%A7/"/>
-    <id>http://example.com/2021/01/15/vim%E6%93%8D%E4%BD%9C%E6%8A%80%E5%B7%A7/</id>
-    <published>2021-01-15T14:42:40.000Z</published>
-    <updated>2021-01-15T14:48:23.354Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="vim-操作技巧"><a href="#vim-操作技巧" class="headerlink" title="vim 操作技巧"></a>vim 操作技巧</h1><hr><p><strong>vim 块编辑</strong></p><p>按 v 进入可视模式，再按 ctrl+v 进入块编辑模式，再按 s 插入，按 esc 退出</p><p><strong>vim 全局批量代换</strong></p><p><code>%s/string/tostring/g</code></p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h1 id=&quot;vim-操作技巧&quot;&gt;&lt;a href=&quot;#vim-操作技巧&quot; class=&quot;headerlink&quot; title=&quot;vim 操作技巧&quot;&gt;&lt;/a&gt;vim 操作技巧&lt;/h1&gt;&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;vim 块编辑&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;按 v 进入可视模</summary>
-      
-    
-    
-    
-    
-    <category term="vim" scheme="http://example.com/tags/vim/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>arch双显卡</title>
-    <link href="http://example.com/2020/11/11/arch%E5%8F%8C%E6%98%BE%E5%8D%A1/"/>
-    <id>http://example.com/2020/11/11/arch%E5%8F%8C%E6%98%BE%E5%8D%A1/</id>
-    <published>2020-11-11T07:48:22.000Z</published>
-    <updated>2020-11-11T07:48:22.268Z</updated>
-    
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Git操作备忘</title>
-    <link href="http://example.com/2020/10/21/git/"/>
-    <id>http://example.com/2020/10/21/git/</id>
-    <published>2020-10-21T08:08:32.000Z</published>
-    <updated>2021-01-30T02:22:32.131Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="push-到仓库"><a href="#push-到仓库" class="headerlink" title="push 到仓库"></a>push 到仓库</h1><ul><li>git init</li><li>git add .</li><li>git commit</li><li>git remote add [远程主机名] [url]</li><li>git push origin</li></ul><h1 id="子仓库-push-只有箭头"><a href="#子仓库-push-只有箭头" class="headerlink" title="子仓库 push 只有箭头"></a>子仓库 push 只有箭头</h1><ol><li>删掉本地文件夹，备份</li><li>正常 push 操作</li><li>放入文件夹再进行 push（git add _)<br>git add _ 忽略.gitgnore</li></ol><h1 id="git-免密-push"><a href="#git-免密-push" class="headerlink" title="git 免密 push"></a>git 免密 push</h1><h2 id="方法一：https-记住密码"><a href="#方法一：https-记住密码" class="headerlink" title="方法一：https 记住密码"></a>方法一：https 记住密码</h2><pre><code>     git config --global credential.helper store</code></pre><h2 id="方法二：ssh"><a href="#方法二：ssh" class="headerlink" title="方法二：ssh"></a>方法二：ssh</h2><pre><code>     git init     git config --global user.name ''     git config --global user.email ''     ssh-keygen -t rsa     cat ~/.ssh/id_rsa.pub</code></pre><p>主页 setting 加入公钥</p><pre><code>     git clone git@github.com:'project url'</code></pre>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h1 id=&quot;push-到仓库&quot;&gt;&lt;a href=&quot;#push-到仓库&quot; class=&quot;headerlink&quot; title=&quot;push 到仓库&quot;&gt;&lt;/a&gt;push 到仓库&lt;/h1&gt;&lt;ul&gt;
-&lt;li&gt;git init&lt;/li&gt;
-&lt;li&gt;git add .&lt;/li&gt;
-&lt;li&gt;git</summary>
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Grub rescue 修复引导</title>
-    <link href="http://example.com/2020/10/21/grub/"/>
-    <id>http://example.com/2020/10/21/grub/</id>
-    <published>2020-10-21T05:45:34.000Z</published>
-    <updated>2020-10-21T07:47:17.284Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="grub-rescue-修复引导"><a href="#grub-rescue-修复引导" class="headerlink" title="grub rescue 修复引导"></a>grub rescue 修复引导</h1><p>1.<strong><em>进入 normal 模式:</em></strong></p><ul><li><p>set</p></li><li><p>ls (hdx,y)/boot/grub/</p></li><li><p>set root=(hdx,y)</p></li><li><p>set prefix=(hdx,y)/boot/grub/</p></li><li><p>insmod normal</p></li><li><p>normal<br>2.<strong><em>启动 arch 重装 grub:</em></strong></p></li><li><p>grub-install –target=x86_64-efi –efi-directory=/boot/EFI –bootloader-id=GRUB</p></li><li><p>grub-mkconfig -o /boot/grub/grub.cfg</p></li></ul><p>3.<strong><em>重启结束</em></strong></p><h1 id="更换主题"><a href="#更换主题" class="headerlink" title="更换主题"></a>更换主题</h1><p>直接下载主题，解压进入目录执行:</p><pre><code>sudo ./install.sh</code></pre><h1 id="win10-arch-双引导"><a href="#win10-arch-双引导" class="headerlink" title="win10+arch 双引导:"></a>win10+arch 双引导:</h1><p>挂在 win10 所在的 efi 目录,直接重新生 grubconfig 文件</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h1 id=&quot;grub-rescue-修复引导&quot;&gt;&lt;a href=&quot;#grub-rescue-修复引导&quot; class=&quot;headerlink&quot; title=&quot;grub rescue 修复引导&quot;&gt;&lt;/a&gt;grub rescue 修复引导&lt;/h1&gt;&lt;p&gt;1.&lt;strong&gt;&lt;em&gt;</summary>
-      
-    
-    
-    
-    
-    <category term="Archlinux grub" scheme="http://example.com/tags/Archlinux-grub/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>开个博客,随便写写</title>
-    <link href="http://example.com/2020/10/12/begin/"/>
-    <id>http://example.com/2020/10/12/begin/</id>
-    <published>2020-10-12T12:01:29.000Z</published>
-    <updated>2020-10-12T15:28:03.049Z</updated>
-    
-    
-    
-    
+    <category term="Archlinx Pacman man" scheme="http://example.com/tags/Archlinx-Pacman-man/"/>
     
   </entry>
   
