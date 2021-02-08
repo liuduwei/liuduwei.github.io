@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>LDW&#39;s blog</title>
+  
+  
+  <link href="http://example.com/atom.xml" rel="self"/>
+  
+  <link href="http://example.com/"/>
+  <updated>2021-02-08T07:34:32.807Z</updated>
+  <id>http://example.com/</id>
+  
+  <author>
+    <name>LDW</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Hexo修复文章图片无法加载</title>
+    <link href="http://example.com/2021/02/08/Hexo-fix-imagectload/"/>
+    <id>http://example.com/2021/02/08/Hexo-fix-imagectload/</id>
+    <published>2021-02-08T07:29:08.000Z</published>
+    <updated>2021-02-08T07:34:32.807Z</updated>
+    
+    <content type="html"><![CDATA[<ol><li><p>修改 config.yml<br>post_asset-folder: ture</p></li><li><p>安装插件<br>cnpm install hexo-filter-image –save</p></li></ol>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;修改 config.yml&lt;br&gt;post_asset-folder: ture&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;安装插件&lt;br&gt;cnpm install hexo-filter-image –save&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+</summary>
+      
+    
+    
+    
+    
+    <category term="Hexo" scheme="http://example.com/tags/Hexo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Archlinux-gnome-optimus</title>
+    <link href="http://example.com/2021/02/08/Archlinux-gnome-optimus/"/>
+    <id>http://example.com/2021/02/08/Archlinux-gnome-optimus/</id>
+    <published>2021-02-08T06:49:50.000Z</published>
+    <updated>2021-02-08T07:04:37.401Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="效果如下"><a href="#效果如下" class="headerlink" title="效果如下:"></a>效果如下:</h1><p><img src="/../images/overlook.png" alt="overlook"><br><img src="/../images/neofetch.png" alt="neofetch"><br><img src="/../images/nemo.png" alt="directory"><br><img src="/../images/tweak.png" alt="tweak"></p><h1 id="安装"><a href="#安装" class="headerlink" title="安装:"></a>安装:</h1><blockquote><p>所有主题均在<a href="https://www.pling.com/s/Gnome/browse">GNOME-LOOK.ORG</a>安装</p></blockquote><ol><li>sudo pacman -S ocs-url</li><li>点击主题右窗口install</li></ol>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;效果如下&quot;&gt;&lt;a href=&quot;#效果如下&quot; class=&quot;headerlink&quot; title=&quot;效果如下:&quot;&gt;&lt;/a&gt;效果如下:&lt;/h1&gt;&lt;p&gt;&lt;img src=&quot;/../images/overlook.png&quot; alt=&quot;overlook&quot;&gt;&lt;br&gt;&lt;img s</summary>
+      
+    
+    
+    
+    
+    <category term="Archlinux Gnome optimus" scheme="http://example.com/tags/Archlinux-Gnome-optimus/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Archlinux卸载软件</title>
+    <link href="http://example.com/2021/02/07/Archlinux-pacman/"/>
+    <id>http://example.com/2021/02/07/Archlinux-pacman/</id>
+    <published>2021-02-07T08:05:17.000Z</published>
+    <updated>2021-02-08T07:05:09.738Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="安全卸载软件包及其依赖"><a href="#安全卸载软件包及其依赖" class="headerlink" title="安全卸载软件包及其依赖"></a>安全卸载软件包及其依赖</h1><p>sudo pacman -Rs<br>sudo pacman -R $(pacman -Qdtq)<br>sudo pacamn -Rsu</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;安全卸载软件包及其依赖&quot;&gt;&lt;a href=&quot;#安全卸载软件包及其依赖&quot; class=&quot;headerlink&quot; title=&quot;安全卸载软件包及其依赖&quot;&gt;&lt;/a&gt;安全卸载软件包及其依赖&lt;/h1&gt;&lt;p&gt;sudo pacman -Rs&lt;br&gt;sudo pacman -R </summary>
+      
+    
+    
+    
+    
+    <category term="Archlinx Pacman man" scheme="http://example.com/tags/Archlinx-Pacman-man/"/>
+    
+  </entry>
+  
+</feed>
