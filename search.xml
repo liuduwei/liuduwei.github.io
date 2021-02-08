@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>Hexo修复文章图片无法加载</title>
+      <link href="2021/02/08/Hexo-fix-imagectload/"/>
+      <url>2021/02/08/Hexo-fix-imagectload/</url>
+      
+        <content type="html"><![CDATA[<ol><li><p>修改 config.yml<br>post_asset-folder: ture</p></li><li><p>安装插件<br>cnpm install hexo-filter-image –save</p></li></ol>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> Hexo </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Archlinux-gnome-optimus</title>
       <link href="2021/02/08/Archlinux-gnome-optimus/"/>
       <url>2021/02/08/Archlinux-gnome-optimus/</url>
