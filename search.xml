@@ -4,6 +4,44 @@
   
     
     <entry>
+      <title>Archlinux-gnome-optimus</title>
+      <link href="2021/02/08/Archlinux-gnome-optimus/"/>
+      <url>2021/02/08/Archlinux-gnome-optimus/</url>
+      
+        <content type="html"><![CDATA[<h1 id="效果如下"><a href="#效果如下" class="headerlink" title="效果如下:"></a>效果如下:</h1><p><img src="/../images/overlook.png" alt="overlook"><br><img src="/../images/neofetch.png" alt="neofetch"><br><img src="/../images/nemo.png" alt="directory"><br><img src="/../images/tweak.png" alt="tweak"></p><h1 id="安装"><a href="#安装" class="headerlink" title="安装:"></a>安装:</h1><blockquote><p>所有主题均在<a href="https://www.pling.com/s/Gnome/browse">GNOME-LOOK.ORG</a>安装</p></blockquote><ol><li>sudo pacman -S ocs-url</li><li>点击主题右窗口install</li></ol>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> Archlinux </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Archlinux-logs-man</title>
+      <link href="2021/02/08/Archlinux-logslocaltion/"/>
+      <url>2021/02/08/Archlinux-logslocaltion/</url>
+      
+        <content type="html"><![CDATA[<h1 id="location"><a href="#location" class="headerlink" title="location"></a>location</h1><p>/var/log/</p><h1 id="journalctl"><a href="#journalctl" class="headerlink" title="journalctl"></a>journalctl</h1><ol><li>journalctl -u gdm</li><li>journalctl -b</li></ol>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> Archlinux </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Hexo修复文章图片无法加载</title>
       <link href="2021/02/08/Hexo-fix-imagectload/"/>
       <url>2021/02/08/Hexo-fix-imagectload/</url>
@@ -23,44 +61,6 @@
     
     
     <entry>
-      <title>Archlinux-gnome-optimus</title>
-      <link href="2021/02/08/Archlinux-gnome-optimus/"/>
-      <url>2021/02/08/Archlinux-gnome-optimus/</url>
-      
-        <content type="html"><![CDATA[<h1 id="效果如下"><a href="#效果如下" class="headerlink" title="效果如下:"></a>效果如下:</h1><p><img src="/../images/overlook.png" alt="overlook"><br><img src="/../images/neofetch.png" alt="neofetch"><br><img src="/../images/nemo.png" alt="directory"><br><img src="/../images/tweak.png" alt="tweak"></p><h1 id="安装"><a href="#安装" class="headerlink" title="安装:"></a>安装:</h1><blockquote><p>所有主题均在<a href="https://www.pling.com/s/Gnome/browse">GNOME-LOOK.ORG</a>安装</p></blockquote><ol><li>sudo pacman -S ocs-url</li><li>点击主题右窗口install</li></ol>]]></content>
-      
-      
-      
-        <tags>
-            
-            <tag> Archlinux Gnome optimus </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>Archlinux-logs-man</title>
-      <link href="2021/02/08/Archlinux-logslocaltion/"/>
-      <url>2021/02/08/Archlinux-logslocaltion/</url>
-      
-        <content type="html"><![CDATA[<h1 id="location"><a href="#location" class="headerlink" title="location"></a>location</h1><p>/var/log/</p><h1 id="journalctl"><a href="#journalctl" class="headerlink" title="journalctl"></a>journalctl</h1><ol><li>journalctl -u gdm</li><li>journalctl -b</li></ol>]]></content>
-      
-      
-      
-        <tags>
-            
-            <tag> Archlinux log man </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>更换gnome默认文件浏览器</title>
       <link href="2021/02/07/Archlinux-change2nemo/"/>
       <url>2021/02/07/Archlinux-change2nemo/</url>
@@ -71,7 +71,7 @@
       
         <tags>
             
-            <tag> Archlinux Gnome optimus </tag>
+            <tag> Archlinux </tag>
             
         </tags>
       
@@ -90,7 +90,7 @@
       
         <tags>
             
-            <tag> Archlinx Pacman man </tag>
+            <tag> Archlinx </tag>
             
         </tags>
       
@@ -109,7 +109,7 @@
       
         <tags>
             
-            <tag> Archlinux shortcut </tag>
+            <tag> Archlinux </tag>
             
         </tags>
       
@@ -128,7 +128,7 @@
       
         <tags>
             
-            <tag> Archlinux Kde </tag>
+            <tag> Archlinux </tag>
             
         </tags>
       
@@ -147,7 +147,7 @@
       
         <tags>
             
-            <tag> Study Life </tag>
+            <tag> Study </tag>
             
         </tags>
       
@@ -166,7 +166,7 @@
       
         <tags>
             
-            <tag> Study Life </tag>
+            <tag> Study </tag>
             
         </tags>
       
@@ -185,7 +185,7 @@
       
         <tags>
             
-            <tag> Vim man </tag>
+            <tag> Vim </tag>
             
         </tags>
       
@@ -204,7 +204,7 @@
       
         <tags>
             
-            <tag> Archlinux Nvidia optimus </tag>
+            <tag> Archlinux </tag>
             
         </tags>
       
@@ -223,7 +223,7 @@
       
         <tags>
             
-            <tag> Git man </tag>
+            <tag> Git </tag>
             
         </tags>
       
@@ -242,7 +242,7 @@
       
         <tags>
             
-            <tag> Archlinux grub </tag>
+            <tag> Grub </tag>
             
         </tags>
       
