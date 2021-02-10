@@ -1,7 +1,7 @@
 ---
 title: Vim-memo
 date: 2021-01-15 22:42:40
-tags: Vim man
+tags: Vim
 ---
 
 # vim 操作技巧

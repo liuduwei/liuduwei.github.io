@@ -1,7 +1,7 @@
 ---
 title: Archlinux-gnome2Kde
 date: 2021-02-06 21:31:29
-tags: Archlinux Kde
+tags: Archlinux
 ---
 
 ## 安装

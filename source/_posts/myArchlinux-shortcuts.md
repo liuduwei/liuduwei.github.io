@@ -1,7 +1,7 @@
 ---
 title: 我的快捷键设置—Arch
 date: 2021-02-07 14:20:34
-tags: Archlinux shortcut
+tags: Archlinux
 ---
 
 # 全局快捷键

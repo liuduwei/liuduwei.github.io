@@ -1,7 +1,7 @@
 ---
 title: Git操作备忘
 date: 2020-10-21 16:08:32
-tags: Git man
+tags: Git
 ---
 
 # push 到仓库

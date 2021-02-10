@@ -1,7 +1,7 @@
 ---
 title: Archlinux-gnome-optimus
 date: 2021-02-08 14:49:50
-tags: Archlinux Gnome optimus
+tags: Archlinux
 ---
 
 # 效果如下:

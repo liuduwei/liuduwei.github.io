@@ -1,7 +1,7 @@
 ---
 title: Grub-memo
 date: 2020-10-21 13:45:34
-tags: Archlinux grub
+tags: Grub
 ---
 > 不小心把Archlinux弄挂了
 
