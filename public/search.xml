@@ -4,6 +4,44 @@
   
     
     <entry>
+      <title>passGraduate plan</title>
+      <link href="2021/02/27/passGraduate-plan/"/>
+      <url>2021/02/27/passGraduate-plan/</url>
+      
+        <content type="html"><![CDATA[<h1 id="目标分数-420"><a href="#目标分数-420" class="headerlink" title="目标分数(420+)"></a>目标分数(420+)</h1><h2 id="数学-目标分数-130"><a href="#数学-目标分数-130" class="headerlink" title="数学(目标分数 130+)"></a>数学(目标分数 130+)</h2><ul><li><input disabled type="checkbox"> 四月前看完同济高数教材, 知识点录入 Anki</li><li><input disabled type="checkbox"> 六月前看完线代概率论教材, 知识点录入 Anki</li><li><input disabled type="checkbox"> 暑假前完成汤家凤 1800 高数现代概率论基础部分, 整理错题到 Anki</li><li><input disabled type="checkbox"> 暑假过完一遍复习全书, 形成完整的知识体系, 掌握一定的解题技巧</li><li><input disabled type="checkbox"> 暑假后开学开始真题训练,做李永乐 660</li></ul><hr><h2 id="英语-目标分数-80"><a href="#英语-目标分数-80" class="headerlink" title="英语(目标分数 80+)"></a>英语(目标分数 80+)</h2><ul><li><input disabled type="checkbox"> 开学前(3.7)过完第一遍新东方 5500 词汇书</li><li><input disabled type="checkbox"> 10 天左右过完一遍田静长难句解析</li><li><input disabled type="checkbox"> 3 月中旬开始做真题阅读</li><li><input disabled type="checkbox"> 10 月份开始准备作文，11 月份开始练习写作文（历年真题都写一遍）</li></ul><hr><h2 id="政治-目标分数-80"><a href="#政治-目标分数-80" class="headerlink" title="政治(目标分数 80+)"></a>政治(目标分数 80+)</h2><ul><li><input disabled type="checkbox"> 大四开学九月份开始政治复习</li></ul><hr><h2 id="专业课-130"><a href="#专业课-130" class="headerlink" title="专业课(130+)"></a>专业课(130+)</h2><ul><li><input disabled type="checkbox"> 暑假前看完两本教材，形成完整的知识体系，适当的练习教材上的题目，代码可以自己敲一敲</li><li><input disabled type="checkbox"> 暑假看王道复习全书</li></ul><h2 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h2><ul><li><input disabled type="checkbox"> 每周三次运动，学不下去适当休息一天吧</li></ul>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> Study </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>deploy-on-netlify</title>
+      <link href="2021/02/10/deploy-on-netlify/"/>
+      <url>2021/02/10/deploy-on-netlify/</url>
+      
+        <content type="html"><![CDATA[<blockquote><p>GithubPages 在国内的访问速度实在太慢了，看了下 cdn 加速，要备案什么的太麻烦，于是找到了 Netlify 这个还算不错的解决方案（主要是免费 😏）</p></blockquote><h2 id="注册Netlify"><a href="#注册Netlify" class="headerlink" title="注册Netlify"></a>注册<a href="https://www.netlify.com/">Netlify</a></h2><p>第一个选项就是 Github 登录, 一路确认就好了</p><h2 id="绑定仓库"><a href="#绑定仓库" class="headerlink" title="绑定仓库"></a>绑定仓库</h2><p>Github 认证登录过后，右边应该有个 Site from git. 点击进去一路确认，选择你的 blog 源代码仓库. 没记错之后会自动跳到部署页面</p><h2 id="部署"><a href="#部署" class="headerlink" title="部署"></a>部署</h2><blockquote><p>这一步稍微复杂一点点</p></blockquote><ol><li>部署页面最下段会出现一个 build command 选项:<br><img src="/../images/Netlify1.png" alt="deploy-site"><center style="font-size:14px;color:#C0C0C0;text-decoration:underline">注意截图和第一次部署不一样</center></li></ol><p>2.</p><ul><li><p>Hexo 选项如下:<br><img src="/../images/build.png" alt="Build"></p></li><li><p>注意这一项一定要填写 Hexo 源码所在的 branch:<br><img src="/../images/site.png" alt="Site"></p></li></ul><ol start="3"><li>如果是静态网站甚至可以不用加 bulid 命令，另外还支持其他很多 Blog 框架的部署(请自行<a href="https://docs.netlify.com/configure-builds/common-configurations/">阅读文档</a>)</li></ol><h2 id="自定义二级域名"><a href="#自定义二级域名" class="headerlink" title="自定义二级域名"></a>自定义二级域名</h2><p>部署成功后会自动生成一个二级域名,但是前缀可以修改:<br><img src="/../images/set.png" alt="set"></p><h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>测试了一下，不挂代理确实快很多，但是第一次图片还是加载的特别慢,但是比 github 随时 connect refused 好多了.</p><p>挂代理 github 快一些.</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> Hexo </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Hexo修复文章图片无法加载</title>
       <link href="2021/02/08/Hexo-fix-imagectload/"/>
       <url>2021/02/08/Hexo-fix-imagectload/</url>
@@ -90,7 +128,7 @@
       
         <tags>
             
-            <tag> Archlinx </tag>
+            <tag> Archlinux </tag>
             
         </tags>
       
