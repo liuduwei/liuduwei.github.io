@@ -1,0 +1,42 @@
+
+# main menu navigation
+menu:
+  Home: /
+  About: /about
+  Archive: /archives
+
+widgets:
+  - tag
+  - archive
+  - recent_posts
+  - category
+  - profile
+
+# social config
+social:
+  zhihu:
+  twitter: /
+  facebook: /
+  linkedin:
+  instagram: /
+  github: liuduwei
+
+user:
+  name: CcrazyCaiNiao
+  avatar: ldw.jpg
+  location: Moon
+  description: Wasting time is robbing yourself.
+
+# documents: https://github.com/utterance/utterances
+# API config: https://utteranc.es/
+comment_utteranc:
+  enable: true
+  repo: https://github.com/liuduwei/liuduwei.github.io # your blog repo
+
+# dark
+# light
+# user-can-set
+appearance: dark
+
+# Miscellaneous
+favicon: favicon.ico
