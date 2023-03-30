@@ -14,11 +14,11 @@ widgets:
 
 # social config
 social:
-  zhihu:
-  twitter: /
-  facebook: /
-  linkedin:
-  instagram: /
+  # zhihu: https://www.zhihu.com/people/zhou-jie-lun-67-58-47
+  # twitter: /
+  # facebook: /
+  # linkedin:
+  # instagram: /
   github: liuduwei
 
 user:
@@ -39,4 +39,4 @@ comment_utteranc:
 appearance: dark
 
 # Miscellaneous
-favicon: favicon.ico
+favicon: ldw.jpg
