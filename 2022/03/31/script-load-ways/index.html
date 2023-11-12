@@ -1,0 +1,49 @@
+<!DOCTYPE html><html class="appearance-dark" lang="en"><head><meta charset="UTF-8"><title>script-load-ways</title><meta name="description" content="blog"><meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, initial-scale=1"><!-- Google Analytics --><!-- End Google Analytics -->
+<!-- Baidu Analytics --><!-- End Baidu Analytics --><link rel="icon" href="/ldw.jpg"><link rel="stylesheet" href="/style/common/bulma.css"><link rel="stylesheet" href="/style/base.css"><link rel="stylesheet" href="/style/common/helper.css"><script src="/js/common.js"></script><link rel="stylesheet" href="/style/post.css"><link rel="stylesheet" href="/style/themes/highlight-theme-light.css"><link rel="stylesheet" href="/style/common/jquery.fancybox.min.css"><script src="/js/highlight.pack.js"></script><meta name="description" content="
+总结一下使用三种不同的方式加载JS脚本，对DomContentLoaded事件的影响
+
+在本文中，我们将总结一下使用三种不同的方式加载JS脚本，对DomContentLoaded事件的影响。DomContentLoaded事件是指浏览器解析完HTML文档，构建了DOM树后触发的事件，它通常用于执行一些依赖于DOM元素的操作。加载JS脚本有三种方式：默认加载、defer和async，它们分别有不同的特点和影响。
+默认加载
+默认加载是最常见的一种方式，就是直接在HTML文档中使用标签引入外部脚本。这种方式的特点是：
+
+
+脚本会按照声明的顺序依次执行。
+脚本会阻塞HTML文档的解析和DOM树的构建，直到脚本执行完毕。
+脚本会阻塞后面的脚本和样式表的加载和渲染。
+脚本会延迟DomContentLoaded事件的触.."><meta name="generator" content="Hexo 6.3.0"><link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+</head><body class="is-flex is-flex-direction-column"><header class="header-widget is-flex-shrink-0 is-hidden-mobile"><div class="container is-fullhd is-flex is-justify-content-space-between is-align-items-center is-full-height"><section class="is-hidden-mobile is-flex-shrink-0"><h2><a href="/">CcrazyCaiNiao's blog</a></h2></section><h3 class="is-hidden-mobile is-family-serif is-full-height is-flex is-align-items-center is-flex-shrink-0"><div class="is-full-height" id="postTopic"><p class="is-full-height is-flex-shrink-0 is-flex is-align-items-center is-justify-content-center">script-load-ways</p><p class="is-full-height is-flex-shrink-0 is-flex is-align-items-center is-justify-content-center">Click back to the top</p></div></h3><aside class="is-flex-shrink-0"><h3 class="is-inline-block"><a href="/">Home</a></h3><h3 class="is-inline-block"><a href="/about">About</a></h3><h3 class="is-inline-block"><a href="/archives">Archives</a></h3></aside></div></header><header class="is-flex header-widget is-flex-shrink-0 is-align-items-center is-justify-content-center is-hidden-tablet"><h3 class="is-inline-block"><a href="/">Home</a></h3><h3 class="is-inline-block"><a href="/about">About</a></h3><h3 class="is-inline-block"><a href="/archives">Archives</a></h3></header><main><main class="container is-max-widescreen content section post-page pt-4 px-4"><div class="columns is-flex-desktop is-justify-content-center is-flex-direction-row-reverse"><div class="column is-3 is-hidden-mobile"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%BB%98%E8%AE%A4%E5%8A%A0%E8%BD%BD"><span class="toc-text">默认加载</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#defer"><span class="toc-text">defer</span></a></li></ol></div><div class="column is-9"><header class="my-4"><a href="/tags/Front-end"><i class="tag post-item-tag">Front-end</i></a><a href="/tags/Javascript"><i class="tag post-item-tag">Javascript</i></a><a href="/tags/Html-event"><i class="tag post-item-tag">Html-event</i></a></header><h1 class="mt-0 mb-1 is-family-serif" id="postTitle">script-load-ways</h1><time class="has-text-grey" datetime="2022-03-31T20:17:31.000Z">2022-03-31</time><article class="mt-2 post-content"><blockquote>
+<p>总结一下使用三种不同的方式加载JS脚本，对DomContentLoaded事件的影响</p>
+</blockquote>
+<p>在本文中，我们将总结一下使用三种不同的方式加载JS脚本，对DomContentLoaded事件的影响。DomContentLoaded事件是指浏览器解析完HTML文档，构建了DOM树后触发的事件，它通常用于执行一些依赖于DOM元素的操作。加载JS脚本有三种方式：默认加载、defer和async，它们分别有不同的特点和影响。</p>
+<h2 id="默认加载"><a href="#默认加载" class="headerlink" title="默认加载"></a>默认加载</h2><blockquote>
+<p>默认加载是最常见的一种方式，就是直接在HTML文档中使用<script src="test.js"></script>标签引入外部脚本。这种方式的特点是：</p>
+</blockquote>
+<ul>
+<li>脚本会按照声明的顺序依次执行。</li>
+<li>脚本会阻塞HTML文档的解析和DOM树的构建，直到脚本执行完毕。</li>
+<li>脚本会阻塞后面的脚本和样式表的加载和渲染。</li>
+<li>脚本会延迟DomContentLoaded事件的触发，直到所有的脚本执行完毕。</li>
+</ul>
+<p>这种方式的优点是简单易用，保证了脚本之间的依赖关系。缺点是会影响页面的性能和用户体验，因为页面会出现白屏或者卡顿的现象。</p>
+<h2 id="defer"><a href="#defer" class="headerlink" title="defer"></a>defer</h2><blockquote>
+<p>defer是一个HTML5新增的属性，可以用于<script>标签，表示延迟执行脚本。这种方式的特点是：</p>
+</blockquote>
+<ul>
+<li>脚本会按照声明的顺序依次执行。</li>
+<li>脚本不会阻塞HTML文档的解析和DOM树的构建，而是在后台异步下载。</li>
+<li>脚本会在DomContentLoaded事件之前执行，但不会阻塞该事件的触发。</li>
+<li>脚本不会阻塞后面的脚本和样式表的加载和渲染。</li>
+</ul>
+<p>这种方式的优点是可以提高页面的性能和用户体验，因为页面不会出现白屏或者卡顿的现象。缺点是不支持老旧的浏览器。</p>
+<h2 id="async"><a href="#async" class="headerlink" title="async"></a>async</h2><blockquote>
+<p>async也是一个HTML5新增的属性，可以用于<script>标签，表示异步执行脚本。这种方式的特点是：</p>
+</blockquote>
+<ul>
+<li>脚本不会按照声明的顺序执行，而是哪个脚本先下载完就先执行。</li>
+<li>脚本不会阻塞HTML文档的解析和DOM树的构建，而是在后台异步下载。</li>
+<li>脚本不会等待DomContentLoaded事件，而是一旦下载完就立即执行，并可能阻塞该事件的触发。</li>
+<li>脚本不会阻塞后面的脚本和样式表的加载和渲染。</li>
+</ul>
+<p>这种方式的优点是可以最大程度地利用网络资源，提高页面加载速度。缺点是无法保证脚本之间的依赖关系，可能导致错误或者意外结果。</p>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>使用三种不同的方式加载JS脚本，对DomContentLoaded事件有不同程度的影响。默认加载会延迟该事件的触发，defer会在该事件之前执行，async则可能阻塞该事件的触发。根据不同场景和需求，我们可以选择合适的方式来优化页面性能和用户体验。</p>
+</article><section class="jump-container is-flex is-justify-content-space-between my-6"><!-- em is empty placeholder--><em></em><a class="button is-default" href="/2021/04/04/Anki-2-%E6%8F%92%E4%BB%B6-Dic2Anki/" title="Anki-2-插件-Dic2Anki"><span class="has-text-weight-semibold">Next: Anki-2-插件-Dic2Anki</span><i class="iconfont icon-next ml-2 has-text-grey"></i></a></section><article class="mt-6 comment-container"><script async repo="https://github.com/liuduwei/liuduwei.github.io" src="https://utteranc.es/client.js" issue-term="pathname" theme="preferred-color-scheme"></script></article></div></div></main></main><footer class="is-flex is-flex-direction-column is-align-items-center is-flex-shrink-0 is-family-serif"><section class="sns-container"><!-- Github--><a title="github" target="_blank" rel="noopener nofollow" href="//github.com/liuduwei"><i class="iconfont icon-github"></i></a><!-- Ins--><!-- RSS--><!-- 知乎--><!-- 领英--><!-- 脸书--></section><p><span>Copyright ©</span><span> CcrazyCaiNiao 2023</span></p><div class="is-flex is-justify-content-center is-flex-wrap-wrap"><p>Powered by Hexo &verbar;&nbsp;</p><p class="is-flex is-justify-content-center"><a title="Hexo theme author" target="_blank" rel="noopener" href="//github.com/haojen">Theme by Haojen&nbsp;</a></p><div style="margin-top: 2px"><a class="github-button" title="github-button" target="_blank" rel="noopener" href="https://github.com/haojen/hexo-theme-Claudia" data-color-scheme="no-preference: light; light: light; dark: dark;" data-show-count="true"></a></div></div><div><span></span></div></footer><script async defer src="https://buttons.github.io/buttons.js"></script><script src="/js/post.js"></script></body></html>

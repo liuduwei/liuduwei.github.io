@@ -6,7 +6,7 @@
   <link href="https://liuduwei.github.io/atom.xml" rel="self"/>
   
   <link href="https://liuduwei.github.io/"/>
-  <updated>2023-03-31T12:08:46.582Z</updated>
+  <updated>2023-11-12T12:44:14.756Z</updated>
   <id>https://liuduwei.github.io/</id>
   
   <author>
@@ -17,11 +17,40 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>script-load-ways</title>
+    <link href="https://liuduwei.github.io/2022/03/31/script-load-ways/"/>
+    <id>https://liuduwei.github.io/2022/03/31/script-load-ways/</id>
+    <published>2022-03-31T20:17:31.000Z</published>
+    <updated>2023-11-12T12:44:14.756Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><p>总结一下使用三种不同的方式加载JS脚本，对DomContentLoaded事件的影响</p></blockquote><p>在本文中，我们将总结一下使用三种不同的方式加载JS脚本，对DomContentLoaded事件的影响。DomContentLoaded事件是指浏览器解析完HTML文档，构建了DOM树后触发的事件，它通常用于执行一些依赖于DOM元素的操作。加载JS脚本有三种方式：默认加载、defer和async，它们分别有不同的特点和影响。</p><h2 id="默认加载"><a href="#默认加载" class="headerlink" title="默认加载"></a>默认加载</h2><blockquote><p>默认加载是最常见的一种方式，就是直接在HTML文档中使用<script src="test.js"></script>标签引入外部脚本。这种方式的特点是：</p></blockquote><ul><li>脚本会按照声明的顺序依次执行。</li><li>脚本会阻塞HTML文档的解析和DOM树的构建，直到脚本执行完毕。</li><li>脚本会阻塞后面的脚本和样式表的加载和渲染。</li><li>脚本会延迟DomContentLoaded事件的触发，直到所有的脚本执行完毕。</li></ul><p>这种方式的优点是简单易用，保证了脚本之间的依赖关系。缺点是会影响页面的性能和用户体验，因为页面会出现白屏或者卡顿的现象。</p><h2 id="defer"><a href="#defer" class="headerlink" title="defer"></a>defer</h2><blockquote><p>defer是一个HTML5新增的属性，可以用于<script>标签，表示延迟执行脚本。这种方式的特点是：</p></blockquote><ul><li>脚本会按照声明的顺序依次执行。</li><li>脚本不会阻塞HTML文档的解析和DOM树的构建，而是在后台异步下载。</li><li>脚本会在DomContentLoaded事件之前执行，但不会阻塞该事件的触发。</li><li>脚本不会阻塞后面的脚本和样式表的加载和渲染。</li></ul><p>这种方式的优点是可以提高页面的性能和用户体验，因为页面不会出现白屏或者卡顿的现象。缺点是不支持老旧的浏览器。</p><h2 id="async"><a href="#async" class="headerlink" title="async"></a>async</h2><blockquote><p>async也是一个HTML5新增的属性，可以用于<script>标签，表示异步执行脚本。这种方式的特点是：</p></blockquote><ul><li>脚本不会按照声明的顺序执行，而是哪个脚本先下载完就先执行。</li><li>脚本不会阻塞HTML文档的解析和DOM树的构建，而是在后台异步下载。</li><li>脚本不会等待DomContentLoaded事件，而是一旦下载完就立即执行，并可能阻塞该事件的触发。</li><li>脚本不会阻塞后面的脚本和样式表的加载和渲染。</li></ul><p>这种方式的优点是可以最大程度地利用网络资源，提高页面加载速度。缺点是无法保证脚本之间的依赖关系，可能导致错误或者意外结果。</p><h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>使用三种不同的方式加载JS脚本，对DomContentLoaded事件有不同程度的影响。默认加载会延迟该事件的触发，defer会在该事件之前执行，async则可能阻塞该事件的触发。根据不同场景和需求，我们可以选择合适的方式来优化页面性能和用户体验。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;总结一下使用三种不同的方式加载JS脚本，对DomContentLoaded事件的影响&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;在本文中，我们将总结一下使用三种不同的方式加载JS脚本，对DomContentLoaded事件的影响。DomConten</summary>
+      
+    
+    
+    
+    
+    <category term="Front-end" scheme="https://liuduwei.github.io/tags/Front-end/"/>
+    
+    <category term="Javascript" scheme="https://liuduwei.github.io/tags/Javascript/"/>
+    
+    <category term="Html-event" scheme="https://liuduwei.github.io/tags/Html-event/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Anki-2-插件-Dic2Anki</title>
     <link href="https://liuduwei.github.io/2021/04/04/Anki-2-%E6%8F%92%E4%BB%B6-Dic2Anki/"/>
     <id>https://liuduwei.github.io/2021/04/04/Anki-2-%E6%8F%92%E4%BB%B6-Dic2Anki/</id>
     <published>2021-04-04T11:52:32.000Z</published>
-    <updated>2023-03-31T12:08:46.582Z</updated>
+    <updated>2023-11-12T12:44:14.756Z</updated>
     
     <content type="html"><![CDATA[<blockquote><p>自使用 Anki 以来，如何录入每日生活中遇到的生词一直困扰着我，直到遇到了这款插件 Dic2Anki</p></blockquote><h2 id="插件简介"><a href="#插件简介" class="headerlink" title="插件简介"></a>插件简介</h2><p>Dic2Anki 支持同步 Eudic 和有道词典的生词本到 Anki，使用自带模板（比较丑）,同步时自动查询，查询能选择插件自带的 Eudic 或者是有道的 api, 帐号能通过帐号密码二维码或者是 cookies 登录，还是比较方便的</p><h2 id="插件安装"><a href="#插件安装" class="headerlink" title="插件安装"></a>插件安装</h2><p>Add-ons 代码：1284759083<br>(Ankiweb 页面)[<a href="https://ankiweb.net/shared/info/1284759083]">https://ankiweb.net/shared/info/1284759083]</a> :</p><h2 id="模板改进"><a href="#模板改进" class="headerlink" title="模板改进"></a>模板改进</h2><p>这个自带的模板查询出来是真的丑的不能看，建议改一下模板类型，只保留单词字段，配合 fastwq 来查询</p>]]></content>
     
@@ -46,7 +75,7 @@
     <link href="https://liuduwei.github.io/2021/02/28/Anki-1-%E5%8D%95%E8%AF%8D%E5%8D%A1%E6%89%B9%E9%87%8F%E5%88%B6%E4%BD%9C%E7%9A%84%E6%96%B9%E6%B3%95/"/>
     <id>https://liuduwei.github.io/2021/02/28/Anki-1-%E5%8D%95%E8%AF%8D%E5%8D%A1%E6%89%B9%E9%87%8F%E5%88%B6%E4%BD%9C%E7%9A%84%E6%96%B9%E6%B3%95/</id>
     <published>2021-02-28T18:19:00.000Z</published>
-    <updated>2023-03-31T12:08:46.582Z</updated>
+    <updated>2023-11-12T12:44:14.756Z</updated>
     
     <content type="html"><![CDATA[<blockquote><p>用 Anki 背单词好一段时间了,期间一直在探索如何优雅的批量制出质量不错的卡片，到现在为止，算是掌握了两种方法</p></blockquote><h2 id="方法一：通过开源项目-FastWq-制卡"><a href="#方法一：通过开源项目-FastWq-制卡" class="headerlink" title="方法一：通过开源项目 FastWq 制卡"></a>方法一：通过开源项目 FastWq 制卡</h2><blockquote><p>项目地址<a href="https://github.com/sth2018/FastWordQuery">https://github.com/sth2018/FastWordQuery</a></p></blockquote><h4 id="效果如下图："><a href="#效果如下图：" class="headerlink" title="效果如下图："></a>效果如下图：</h4><p><img src="/../images/fastwq1.png" alt="fastwq1"><br><img src="/../images/fastwq2.png" alt="fastwq2"></p><h4 id="制卡方法"><a href="#制卡方法" class="headerlink" title="制卡方法:"></a>制卡方法:</h4><ol><li><p><strong>安装插件</strong></p><p>请根据<a href="https://github.com/sth2018/FastWordQuery">项目</a>ReadMe 文件安装，这里不再赘述.</p></li><li><p><strong>选择模板</strong></p><p>使用插件查询需要先选定模板，模板选取自己喜欢的就好了，这里有两个个开源项目(<a href="https://github.com/ninja33/anki-templates">1</a>,<a href="https://github.com/Troyciv/anki-templates-superlist">2</a>)收集了一些优秀模板，可以参考一下，注意的是有些模板的配色和查询结果的配色或者暗黑模式不兼容，需要自行修改一下模板的 html 或者 css 文件使得卡片字段一目了然</p></li><li><p><strong>插件配置</strong></p><p>详细的使用教程 ReadMe 讲的很清楚了,但是这里再上补充一下：插件的有些选项是无效的，或者选项返回的结果很离谱.</p><p>经过我的简单摸索，我自己的模板使用这个配置制作的卡片效果比较好:<br><img src="/../images/fastwqconfig.png" alt="fastwqcg"></p></li></ol><h2 id="方法二：通过-Excel-制作卡片"><a href="#方法二：通过-Excel-制作卡片" class="headerlink" title="方法二：通过 Excel 制作卡片"></a>方法二：通过 Excel 制作卡片</h2><blockquote><p>此方法是在知呼上看到的，点击链接跳转</p></blockquote><p>需要补充的是，Excel 制卡文件只能在 windows 下用微软 Execl 打开，不支持 linux 下的 wps(win10 下的 wps 没测试过)</p><h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><ol><li><p>Excel 制卡的方法很简单，基本开箱即用，一点都不需要额外的配置，但是缺点是比较麻烦，效率低</p></li><li><p>FastWq 配置起来比较麻烦，但是配置好过后效果非常好，支持本地字典查询模板字段自定义, 不需要任何第三方工具，方便且高效（也许 Execl 的法二改一改源代码也可以)</p></li></ol><p><strong>希望之后还能找到更方便高效的方法，有时间甚至我都想自己写一个插件了，当然这都是后话了，我的当务之急是用好 Anki 这个神器考研冲冲冲</strong></p>]]></content>
     
@@ -71,7 +100,7 @@
     <link href="https://liuduwei.github.io/2021/02/10/deploy-on-netlify/"/>
     <id>https://liuduwei.github.io/2021/02/10/deploy-on-netlify/</id>
     <published>2021-02-10T21:07:55.000Z</published>
-    <updated>2023-03-31T12:08:46.582Z</updated>
+    <updated>2023-11-12T12:44:14.756Z</updated>
     
     <content type="html"><![CDATA[<blockquote><p>GithubPages 在国内的访问速度实在太慢了，看了下 cdn 加速，要备案什么的太麻烦，于是找到了 Netlify 这个还算不错的解决方案（主要是免费 😏）</p></blockquote><h2 id="注册Netlify"><a href="#注册Netlify" class="headerlink" title="注册Netlify"></a>注册<a href="https://www.netlify.com/">Netlify</a></h2><p>第一个选项就是 Github 登录, 一路确认就好了</p><h2 id="绑定仓库"><a href="#绑定仓库" class="headerlink" title="绑定仓库"></a>绑定仓库</h2><p>Github 认证登录过后，右边应该有个 Site from git. 点击进去一路确认，选择你的 blog 源代码仓库. 没记错之后会自动跳到部署页面</p><h2 id="部署"><a href="#部署" class="headerlink" title="部署"></a>部署</h2><blockquote><p>这一步稍微复杂一点点</p></blockquote><ol><li><p>部署页面最下段会出现一个 build command 选项:<br><img src="/../images/Netlify1.png" alt="deploy-site"></p><center style="font-size:14px;color:#C0C0C0;text-decoration:underline">注意截图和第一次部署不一样</center></li><li></li></ol><ul><li><p>Hexo 选项如下:<br><img src="/../images/build.png" alt="Build"></p></li><li><p>注意这一项一定要填写 Hexo 源码所在的 branch:<br><img src="/../images/site.png" alt="Site"></p></li></ul><ol start="3"><li>如果是静态网站甚至可以不用加 bulid 命令，另外还支持其他很多 Blog 框架的部署(请自行<a href="https://docs.netlify.com/configure-builds/common-configurations/">阅读文档</a>)</li></ol><h2 id="自定义二级域名"><a href="#自定义二级域名" class="headerlink" title="自定义二级域名"></a>自定义二级域名</h2><p>部署成功后会自动生成一个二级域名,但是前缀可以修改:<br><img src="/../images/set.png" alt="set"></p><h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>测试了一下，不挂代理确实快很多，但是第一次图片还是加载的特别慢,但是比 github 随时 connect refused 好多了.</p><p>挂代理 github 快一些.</p>]]></content>
     
@@ -96,7 +125,7 @@
     <link href="https://liuduwei.github.io/2021/02/08/Hexo-fix-imagectload/"/>
     <id>https://liuduwei.github.io/2021/02/08/Hexo-fix-imagectload/</id>
     <published>2021-02-08T15:29:08.000Z</published>
-    <updated>2023-03-31T12:08:46.582Z</updated>
+    <updated>2023-11-12T12:44:14.756Z</updated>
     
     <content type="html"><![CDATA[<ol><li><p>修改 config.yml<br>post_asset-folder: ture</p></li><li><p>安装插件<br>cnpm install hexo-filter-image –save</p></li></ol>]]></content>
     
@@ -124,7 +153,7 @@
     <link href="https://liuduwei.github.io/2021/02/08/Archlinux-gnome-optimus/"/>
     <id>https://liuduwei.github.io/2021/02/08/Archlinux-gnome-optimus/</id>
     <published>2021-02-08T14:49:50.000Z</published>
-    <updated>2023-03-31T12:08:46.582Z</updated>
+    <updated>2023-11-12T12:44:14.756Z</updated>
     
     <content type="html"><![CDATA[<h1 id="效果如下"><a href="#效果如下" class="headerlink" title="效果如下:"></a>效果如下:</h1><p><img src="/../images/overlook.png" alt="overlook"><br><img src="/../images/neofetch.png" alt="neofetch"><br><img src="/../images/nemo.png" alt="directory"><br><img src="/../images/tweak.png" alt="tweak"></p><h1 id="安装"><a href="#安装" class="headerlink" title="安装:"></a>安装:</h1><blockquote><p>所有主题均在<a href="https://www.pling.com/s/Gnome/browse">GNOME-LOOK.ORG</a>安装</p></blockquote><ol><li>sudo pacman -S ocs-url</li><li>点击主题右窗口install</li></ol>]]></content>
     
@@ -146,7 +175,7 @@
     <link href="https://liuduwei.github.io/2021/02/08/Archlinux-logslocaltion/"/>
     <id>https://liuduwei.github.io/2021/02/08/Archlinux-logslocaltion/</id>
     <published>2021-02-08T11:36:33.000Z</published>
-    <updated>2023-03-31T12:08:46.582Z</updated>
+    <updated>2023-11-12T12:44:14.756Z</updated>
     
     <content type="html"><![CDATA[<h1 id="location"><a href="#location" class="headerlink" title="location"></a>location</h1><p>&#x2F;var&#x2F;log&#x2F;</p><h1 id="journalctl"><a href="#journalctl" class="headerlink" title="journalctl"></a>journalctl</h1><ol><li>journalctl -u gdm</li><li>journalctl -b</li></ol>]]></content>
     
@@ -169,7 +198,7 @@
     <link href="https://liuduwei.github.io/2021/02/07/Archlinux-change2nemo/"/>
     <id>https://liuduwei.github.io/2021/02/07/Archlinux-change2nemo/</id>
     <published>2021-02-07T20:58:44.000Z</published>
-    <updated>2023-03-31T12:08:46.582Z</updated>
+    <updated>2023-11-12T12:44:14.756Z</updated>
     
     <content type="html"><![CDATA[<ol><li><a href="https://www.gauthampdas.com/blog/tech/linux/resetting-default-file-manager-in-gnome">https://www.gauthampdas.com/blog/tech/linux/resetting-default-file-manager-in-gnome</a></li></ol>]]></content>
     
@@ -192,7 +221,7 @@
     <link href="https://liuduwei.github.io/2021/02/07/Archlinux-pacman/"/>
     <id>https://liuduwei.github.io/2021/02/07/Archlinux-pacman/</id>
     <published>2021-02-07T16:05:17.000Z</published>
-    <updated>2023-03-31T12:08:46.582Z</updated>
+    <updated>2023-11-12T12:44:14.756Z</updated>
     
     <content type="html"><![CDATA[<h1 id="安全卸载软件包及其依赖"><a href="#安全卸载软件包及其依赖" class="headerlink" title="安全卸载软件包及其依赖"></a>安全卸载软件包及其依赖</h1><p>sudo pacman -Rs<br>sudo pacman -R $(pacman -Qdtq)<br>sudo pacamn -Rsu</p>]]></content>
     
@@ -214,7 +243,7 @@
     <link href="https://liuduwei.github.io/2021/02/07/myArchlinux-shortcuts/"/>
     <id>https://liuduwei.github.io/2021/02/07/myArchlinux-shortcuts/</id>
     <published>2021-02-07T14:20:34.000Z</published>
-    <updated>2023-03-31T12:08:46.582Z</updated>
+    <updated>2023-11-12T12:44:14.756Z</updated>
     
     <content type="html"><![CDATA[<h1 id="全局快捷键"><a href="#全局快捷键" class="headerlink" title="全局快捷键"></a>全局快捷键</h1><table><thead><tr><th>Function</th><th>key</th></tr></thead><tbody><tr><td>搜索</td><td>mate&#x2F;win</td></tr><tr><td>窗口切换</td><td>mate&#x2F;win+tab</td></tr><tr><td>标签切换</td><td>alt+tab</td></tr><tr><td>窗口 resize</td><td>alt+1</td></tr><tr><td>dict</td><td>alt+2</td></tr><tr><td>截图</td><td>alt+3</td></tr><tr><td>输入法中英文</td><td>shift</td></tr><tr><td>关闭窗口</td><td>alt+q</td></tr><tr><td>always on top</td><td>alt+4</td></tr><tr><td>截图</td><td>alt+3</td></tr><tr><td>复制</td><td>alt+c</td></tr><tr><td>粘贴</td><td>alt+v</td></tr><tr><td>全部应用</td><td>alt+a</td></tr></tbody></table>]]></content>
     
@@ -242,7 +271,7 @@
     <link href="https://liuduwei.github.io/2021/02/06/Archlinux-Gnome2Kde/"/>
     <id>https://liuduwei.github.io/2021/02/06/Archlinux-Gnome2Kde/</id>
     <published>2021-02-06T21:31:29.000Z</published>
-    <updated>2023-03-31T12:08:46.582Z</updated>
+    <updated>2023-11-12T12:44:14.756Z</updated>
     
     <content type="html"><![CDATA[<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p>sudo pacman -S sddm plasma kde-applications<br>sudo systemctl disable gdm<br>sudo systemctl enable sddm</p><h1 id="to-do"><a href="#to-do" class="headerlink" title="to do"></a>to do</h1><ol><li>解决 Kde 桌面开机卡一分钟</li><li>设置快捷键<ul><li>截图快捷键:选取 alt+3，保存 alt+4</li><li>复制粘贴:alt+c，v</li><li>search:ctrl+space</li></ul></li><li>设置应用启动台</li></ol><h1 id="issue"><a href="#issue" class="headerlink" title="issue"></a>issue</h1><ol><li>全局快捷键无法设置</li><li>开机卡桌面一分钟</li></ol><h1 id="Kde已删-gnome换个主题再战"><a href="#Kde已删-gnome换个主题再战" class="headerlink" title="Kde已删,gnome换个主题再战"></a>Kde已删,gnome换个主题再战</h1>]]></content>
     
@@ -264,7 +293,7 @@
     <link href="https://liuduwei.github.io/2021/01/15/vim-memo/"/>
     <id>https://liuduwei.github.io/2021/01/15/vim-memo/</id>
     <published>2021-01-15T22:42:40.000Z</published>
-    <updated>2023-03-31T12:08:46.582Z</updated>
+    <updated>2023-11-12T12:44:14.756Z</updated>
     
     <content type="html"><![CDATA[<h1 id="vim-操作技巧"><a href="#vim-操作技巧" class="headerlink" title="vim 操作技巧"></a>vim 操作技巧</h1><hr><p><strong>vim 块编辑</strong></p><p>按 v 进入可视模式，再按 ctrl+v 进入块编辑模式，再按 s 插入，按 esc 退出</p><p><strong>vim 全局批量代换</strong></p><p><code>%s/string/tostring/g</code></p>]]></content>
     
@@ -288,7 +317,7 @@
     <link href="https://liuduwei.github.io/2020/11/11/Archlinux-Nividia-optimus/"/>
     <id>https://liuduwei.github.io/2020/11/11/Archlinux-Nividia-optimus/</id>
     <published>2020-11-11T15:48:22.000Z</published>
-    <updated>2023-03-31T12:08:46.582Z</updated>
+    <updated>2023-11-12T12:44:14.756Z</updated>
     
     
     
@@ -303,7 +332,7 @@
     <link href="https://liuduwei.github.io/2020/10/21/Git-memo/"/>
     <id>https://liuduwei.github.io/2020/10/21/Git-memo/</id>
     <published>2020-10-21T16:08:32.000Z</published>
-    <updated>2023-03-31T12:08:46.582Z</updated>
+    <updated>2023-11-12T12:44:14.756Z</updated>
     
     <content type="html"><![CDATA[<h1 id="push-到远端"><a href="#push-到远端" class="headerlink" title="push 到远端"></a>push 到远端</h1><ul><li>git init</li><li>git add .</li><li>git commit</li><li>git remote add [远程主机名] [url]</li><li>git push origin [branch]</li></ul><h1 id="push-到远端子文件夹显示为箭头"><a href="#push-到远端子文件夹显示为箭头" class="headerlink" title="push 到远端子文件夹显示为箭头"></a>push 到远端子文件夹显示为箭头</h1><ol><li>删掉本地文件夹，备份</li><li>正常 push 操作</li><li>放入文件夹再进行 push（git add _)<br>git add _ 忽略.gitgnore</li></ol><h1 id="git-免密-push"><a href="#git-免密-push" class="headerlink" title="git 免密 push"></a>git 免密 push</h1><h2 id="方法一：https-记住密码"><a href="#方法一：https-记住密码" class="headerlink" title="方法一：https 记住密码"></a>方法一：https 记住密码</h2><pre><code>     git config --global credential.helper store</code></pre><h2 id="方法二：ssh"><a href="#方法二：ssh" class="headerlink" title="方法二：ssh"></a>方法二：ssh</h2><pre><code>     git init     git config --global user.name &#39;&#39;     git config --global user.email &#39;&#39;     ssh-keygen -t rsa     cat ~/.ssh/id_rsa.pub</code></pre><p>主页 setting 加入公钥</p><pre><code>     git clone git@github.com:&#39;project url&#39;</code></pre><h1 id="从远端恢复本地删除的文件"><a href="#从远端恢复本地删除的文件" class="headerlink" title="从远端恢复本地删除的文件"></a>从远端恢复本地删除的文件</h1><blockquote><p>今天误删了几个博客的子文件夹，以为很简单 git pull 就可以了，结果还是折腾了一番才恢复成功的,过程中也加深了对 git 的认识</p></blockquote><pre><code>  git reset --hard [v]把本地仓库暂存去全部修改为上一次commit（默      认)这个用来回复误删文件是最方便的了</code></pre>]]></content>
     
@@ -328,7 +357,7 @@
     <link href="https://liuduwei.github.io/2020/10/21/Grub-fix/"/>
     <id>https://liuduwei.github.io/2020/10/21/Grub-fix/</id>
     <published>2020-10-21T13:45:34.000Z</published>
-    <updated>2023-03-31T12:08:46.582Z</updated>
+    <updated>2023-11-12T12:44:14.756Z</updated>
     
     <content type="html"><![CDATA[<blockquote><p>不小心把Archlinux弄挂了</p></blockquote><h1 id="Grub修复引导"><a href="#Grub修复引导" class="headerlink" title="Grub修复引导"></a>Grub修复引导</h1><p>1.<strong><em>进入 normal 模式:</em></strong></p><ul><li><pre><code>set</code></pre></li><li><pre><code>ls (hdx,y)/boot/grub/</code></pre></li><li><pre><code>set root=(hdx,y)</code></pre></li><li><pre><code>set prefix=(hdx,y)/boot/grub/</code></pre></li><li><pre><code>insmod normal</code></pre></li><li><pre><code>normal</code></pre><p>2.<strong><em>启动 arch 重装 grub:</em></strong></p></li><li><pre><code>grub-install --target=x86_64-efi --efi-directory=/boot/EFI --bootloader-id=GRUB</code></pre></li><li><pre><code>grub-mkconfig -o /boot/grub/grub.cfg</code></pre></li></ul><p>3.<strong><em>重启结束</em></strong></p><h1 id="更换主题"><a href="#更换主题" class="headerlink" title="更换主题"></a>更换主题</h1><p>直接下载主题，解压进入目录执行:</p><pre><code>sudo ./install.sh</code></pre><h1 id="win10-arch-双引导"><a href="#win10-arch-双引导" class="headerlink" title="win10+arch 双引导:"></a>win10+arch 双引导:</h1><p>挂在 win10 所在的 efi 目录,直接重新生 grubconfig 文件</p>]]></content>
     
