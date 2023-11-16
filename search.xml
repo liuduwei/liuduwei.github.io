@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>The Var, let, Const - What&#39;s the Difference?</title>
+      <link href="/2022/04/16/Var-let-const/"/>
+      <url>/2022/04/16/Var-let-const/</url>
+      
+        <content type="html"><![CDATA[<h1 id="The-Var-let-Const-What’s-the-Difference"><a href="#The-Var-let-Const-What’s-the-Difference" class="headerlink" title="The Var, let, Const - What’s the Difference?"></a>The Var, let, Const - What’s the Difference?</h1><table><thead><tr><th>Aspect</th><th>var</th><th>let</th><th>const</th></tr></thead><tbody><tr><td>Scope</td><td>Function scope; variable is accessible inside function even if declared after usage</td><td>Block scope; variable is only accessible inside nearest enclosing {…}</td><td>Block scope; variable is only accessible inside nearest enclosing {…}</td></tr><tr><td>Re-declared</td><td>Can re-declare var anywhere in the function</td><td>Cannot re-declare let in the same block</td><td>Cannot re-declare const anywhere</td></tr><tr><td>Updated</td><td>Can update&#x2F;reassign the value</td><td>Can update&#x2F;reassign the value</td><td>Cannot update&#x2F;reassign the value, must be initialized and value cannot change</td></tr><tr><td>Hoisted</td><td>Function scoped variables are hoisted to the top of the function</td><td>hoisted to the top of its block or scope, but it is not initialized. Accessing the variable before its declaration results in a ReferenceError.</td><td>hoisted to the top of its block or scope, but it is not initialized. Accessing the variable before its declaration results in a ReferenceError.</td></tr></tbody></table>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> Javascript </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>script-load-ways</title>
       <link href="/2022/03/31/script-load-ways/"/>
       <url>/2022/03/31/script-load-ways/</url>
@@ -14,9 +33,9 @@
       
         <tags>
             
-            <tag> Front-end </tag>
-            
             <tag> Javascript </tag>
+            
+            <tag> Front-end </tag>
             
             <tag> Html-event </tag>
             
