@@ -5,8 +5,6 @@ date: 2022-4-16 16:35:29
 tags: Javascript
 ---
 
-# The Var, let, Const - What's the Difference?
-
 | Aspect      | var                                                                                 | let                                                                                                                                             | const                                                                                                                                           |
 | ----------- | ----------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
 | Scope       | Function scope; variable is accessible inside function even if declared after usage | Block scope; variable is only accessible inside nearest enclosing {...}                                                                         | Block scope; variable is only accessible inside nearest enclosing {...}                                                                         |
