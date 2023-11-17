@@ -1,5 +1,5 @@
 ---
-title: Archlinux卸载软件
+title: Archlinux-如何安全卸载软件
 date: 2021-02-07 16:05:17
 tags: Archlinux
 ---

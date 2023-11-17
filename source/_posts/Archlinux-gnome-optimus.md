@@ -1,5 +1,5 @@
 ---
-title: Archlinux-gnome-optimus
+title: Archlinux-Gnome主题优化
 date: 2021-02-08 14:49:50
 tags: Archlinux
 ---

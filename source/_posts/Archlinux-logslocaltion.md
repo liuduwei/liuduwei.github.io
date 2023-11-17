@@ -1,5 +1,5 @@
 ---
-title: Archlinux-logs-man
+title: Archlinux-如何查看日志
 date: 2021-02-08 11:36:33
 tags: Archlinux
 ---

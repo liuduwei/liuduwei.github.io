@@ -1,5 +1,5 @@
 ---
-title: script-load-ways
+title: 加载JS脚本的三种方法
 date: 2022-03-31 20:17:31
 tags: [Front-end, Javascript, Html-event]
 ---

@@ -1,5 +1,5 @@
 ---
-title: Archlinux-gnome2Kde
+title: Archlinux-从Gnome迁移到Kde
 date: 2021-02-06 21:31:29
 tags: Archlinux
 ---

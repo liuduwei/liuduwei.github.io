@@ -1,5 +1,5 @@
 ---
-title: Anki-2-插件-Dic2Anki
+title: Anki插件介绍-Dic2Anki
 date: 2021-04-04 11:52:32
 tags: Anki
 ---

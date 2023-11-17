@@ -1,5 +1,5 @@
 ---
-title: var, let - what's difference in the for loop
+title: Var, Let - What's Difference In The For Loop
 date: 2022-6-17 16:36:40
 tags: Javascript
 ---

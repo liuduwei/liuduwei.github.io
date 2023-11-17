@@ -1,5 +1,5 @@
 ---
-title: 我的快捷键设置—Arch
+title: Archlinux-我的快捷键设置
 date: 2021-02-07 14:20:34
 tags: Archlinux
 ---

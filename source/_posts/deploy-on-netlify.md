@@ -1,5 +1,5 @@
 ---
-title: deploy-on-netlify
+title: 部署博客到Netlify（智能CDN加速）
 date: 2021-02-10 21:07:55
 tags: Hexo
 ---

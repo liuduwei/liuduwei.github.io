@@ -1,7 +1,7 @@
 ---
-title: Grub-memo
+title: ArchLinux滚挂后的修复
 date: 2020-10-21 13:45:34
-tags: Grub
+tags: [Grub, Arch]
 ---
 > 不小心把Archlinux弄挂了
 
