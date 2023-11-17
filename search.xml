@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>var, let - what&#39;s difference in the for loop</title>
+      <link href="/2022/06/17/var-let-what-s-difference-in-the-for-loop/"/>
+      <url>/2022/06/17/var-let-what-s-difference-in-the-for-loop/</url>
+      
+        <content type="html"><![CDATA[<p>We’ve all written simple for loops to iterate over arrays and objects countless times. But have you ever stopped to consider how the scope of variables used inside loops works? I recently came across an interesting code snippet that highlighted an important distinction between var and let in this context.</p><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; <span class="number">3</span>; i++) &#123;</span><br><span class="line">  <span class="keyword">const</span> <span class="title function_">log</span> = (<span class="params"></span>) =&gt; <span class="variable language_">console</span>.<span class="title function_">log</span>(i);</span><br><span class="line">  <span class="built_in">setTimeout</span>(log, <span class="number">100</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>When running this, you might expect it to log the numbers 0, 1, 2 - one for each iteration of the loop. But it actually logs 3, 3, 3!</p><p>Why is that? It has to do with how var declarations are scoped. Variables defined with var have function scope, meaning they are accessible outside of any blocks like if statements or for loops.</p><p>In this example, i is declared with var at the start of the for loop. Each iteration increments it and passes the reference to i into the timeout callback<br>If we change var to let:</p><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> (<span class="keyword">let</span> i = <span class="number">0</span>; i &lt; <span class="number">3</span>; i++) &#123;</span><br><span class="line">  <span class="comment">//...</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>Now it logs 0, 1, 2 as expected. let bindings are block scoped, so i is treated as a new variable each iteration rather than a single changing reference.</p><p>Moral of the story? Be mindful of scope differences when using loops - it can subtly alter how your code behaves over time. Stick with let if you want block scoping within loops.</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> Javascript </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>History of javascript module development</title>
       <link href="/2022/05/16/History-of-javascript-module-development/"/>
       <url>/2022/05/16/History-of-javascript-module-development/</url>
