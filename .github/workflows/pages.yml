@@ -27,6 +27,8 @@ jobs:
             ${{ runner.OS }}-npm-cache
       - name: Install Dependencies
         run: yarn install
+      - name: clean
+        run: yarn clean
       - name: Build
         run: yarn build
       - name: Upload Pages artifact
