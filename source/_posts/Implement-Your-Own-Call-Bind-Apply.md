@@ -96,6 +96,7 @@ person.sayName.myApply(anotherPerson, ["hi"]);
 1. return a function that, when executed, executes the target function, with the target's this always pointing to the target object.\
 
 code:
+
 ```
 function myBind(object, ...args1) {
   var fn = this;
