@@ -1,7 +1,7 @@
 ---
 title: Implement Your Own Call, Bind, Apply
 date: 2022-10-23 13:39:53
-tags:[Javascript]
+tags: Javascript
 ---
 
 ```call```,```bind```,```apply``` these three functions are very useful in everyday development, What exactly did they do? Let's break it down.
