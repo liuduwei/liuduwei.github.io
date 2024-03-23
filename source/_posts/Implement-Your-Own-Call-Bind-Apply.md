@@ -1,6 +1,6 @@
 ---
 title: Implement Your Own Call, Bind, Apply
-date: 2022-010-23 13:39:53
+date: 2022-10-23 13:39:53
 tags:[Javascript]
 ---
 
