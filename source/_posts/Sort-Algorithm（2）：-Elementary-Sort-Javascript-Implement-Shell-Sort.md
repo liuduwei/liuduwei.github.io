@@ -1,6 +1,6 @@
 ---
 title: Sort Algorithm（2）： Elementary Sort Javascript Implement - Shell Sort
-date: 2024-03-23 20:30:41
+date: 2022-03-23 20:30:41
 tags: [Javascript, Algorithm, Sort]
 ---
 
@@ -37,4 +37,4 @@ module.exports = shellSort;
 Why is Shell Sort so effective compared to Selection Sort? It 
 moves elements in multiple positions, the number of increments every time, but Selection Sort moves elements in only one position.
 
-Shell Sort is more simple than Quick Sort, so the application is widespread in small embedded devices.
+Shell Sort is simpler than Quick Sort, so the application is widespread in small embedded devices.
